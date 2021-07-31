@@ -1,7 +1,8 @@
 # Gats.io-Enhancement-Tool (G.E.T)
 This is a script for Gats.io that enhances user experience by customizing the interface.
 This is still in the Alpha stage so don't expect it to be a completely official, developed, and perfect script.
-#IMPORTANT AWARENESS
+
+# IMPORTANT AWARENESS
 some scripts unfortunately contain code that can take your personal information or data. Watch out for that.
 I am not an expert coder and took me a few months to fully develop this script for release. I am not that familiar with code taking personal information.
 I heard that anything with document.cookie in the script might be potentially there to take info or something just as bad, I am not exactly sure about this though. 
