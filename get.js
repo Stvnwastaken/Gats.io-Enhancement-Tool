@@ -1,4 +1,4 @@
-/ ==UserScript==
+// ==UserScript==
 // @name         G.E.T Gats Enhancement Tool Alpha Version 1.0.0
 // @namespace    http://tampermonkey.net/
 // @version      Alpha 1.0.0
