@@ -7,7 +7,7 @@ some scripts unfortunately contain code that can take your personal information 
 I am not an expert coder and took me a few months to fully develop this script for release. I am not that familiar with code taking personal information.
 I heard that anything with document.cookie in the script might be potentially there to take info or something just as bad, I am not exactly sure about this though. 
 Please do not abuse this script in gats.io or it will ruin the game for others. I made this script since I thought the game started to become boring. ---\\
-This script does not contain any sort of virus or anything the code is available in GET.js anyway. Also the adblock isn't one hundred percent perfect...
+This script does not contain any sort of virus or anything the code is available in get.js anyway. Also the adblock isn't one hundred percent perfect...
 
 # Installation
 I don't think it even works if you paste this code into the console(inspect element) and it is unnecessary anyway since tampermonkey is a code executor extension.
