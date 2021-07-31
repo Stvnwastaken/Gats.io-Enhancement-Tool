@@ -1,4 +1,4 @@
-// ==UserScript==
+/ ==UserScript==
 // @name         G.E.T Gats Enhancement Tool Alpha Version 1.0.0
 // @namespace    http://tampermonkey.net/
 // @version      Alpha 1.0.0
@@ -83,7 +83,7 @@
 //--- checks to see if script is running and gives new logo (if you don't see an alert before the page finishes loading the script is not working)---\\
 function scriptRunning() {
 
-    alert("Injected Gats.io Plus Alpha V0.01");
+    alert("Injected G.E.T Alpha V0.01");
     document.getElementById("gatsLogo").src = "https://i.imgur.com/aOG03yv.png"
 };
 
@@ -371,3 +371,5 @@ adblock4();
 adblock2();
 adblock();
 adblock5();
+
+
