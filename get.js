@@ -1,13 +1,12 @@
 // ==UserScript==
 // @name         G.E.T Gats Enhancement Tool Alpha Version 1.0.3
 // @namespace    http://tampermonkey.net/
-// @version      Alpha 1.0.0
+// @version      Alpha 1.0.3
 // @author       LightLord
 // @match        https://gats.io/
 // @icon         https://www.google.com/s2/favicons?domain=gats.io
 // @description   Gats.io-Enhancement-Tool (G.E.T) This is a script for Gats.io that enhances user experience by customizing the interface. This is still in the Alpha stage so don't expect it to be a completely official, developed, and perfect script.
 // @grant        GM_addStyle
-// @version      1.0.3
 // @history      1.0.0 alpha version
 // @history      1.0.1 alpha version added title
 // @history      1.0.2 added other customization stuff
