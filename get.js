@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         G.E.T Gats Enhancement Tool Alpha Version 1.0.2
+// @name         G.E.T Gats Enhancement Tool Alpha Version 1.0.3
 // @namespace    http://tampermonkey.net/
 // @version      Alpha 1.0.0
 // @author       LightLord
@@ -7,10 +7,11 @@
 // @icon         https://www.google.com/s2/favicons?domain=gats.io
 // @description   Gats.io-Enhancement-Tool (G.E.T) This is a script for Gats.io that enhances user experience by customizing the interface. This is still in the Alpha stage so don't expect it to be a completely official, developed, and perfect script.
 // @grant        GM_addStyle
-// @version      1.0.2
+// @version      1.0.3
 // @history      1.0.0 alpha version
 // @history      1.0.1 alpha version added title
 // @history      1.0.2 added other customization stuff
+// @history      1.0.3 disabled part of gui to fix bug
 // ==/UserScript==
 
 ///===--- INFORMATION ---===\\\
@@ -253,7 +254,7 @@ document.getElementById('weaponBacking').style.background = "#C99400 "
 
 scriptRunning();
 
-let overlayHTML = `
+/*let overlayHTML = `
 <link href="https://fonts.googleapis.com/css?family=Orbitron:900" rel="stylesheet"/>
 <div id="box">
     <div class="ou" id="box2">
@@ -287,7 +288,39 @@ let overlay = document.createElement("div");
     document.body.appendChild(overlay);
 var canvas = document.getElementById('c');
 var ctx = canvas.getContext('2d');
-
+var btn = document.getElementById("playButton")
+var hide = document.getElementById("myCanvas")
+var hide2 = document.getElementById("box")
+var hide3 = document.getElementById("box2")
+var hide4 = document.getElementsByClassName("ou")
+btn.onclick = function () {
+if (hide.style.display == "none") {
+    hide.style.display = "block"
+}else{
+    hide.style.display = "none"
+}
+}
+btn.onclick = function () {
+if (hide2.style.display == "none") {
+    hide2.style.display = "block"
+}else{
+    hide2.style.display = "none"
+}
+}
+btn.onclick = function () {
+if (hide3.style.display == "none") {
+    hide3.style.display = "block"
+}else{
+    hide3.style.display = "none"
+}
+}
+btn.onclick = function () {
+if (hide4.style.display == "none") {
+    hide4.style.display = "block"
+}else{
+    hide4.style.display = "none"
+}
+}*/
 
 //--- useful styles to make interface look cooler + some other styles for general stuff like adblock(which  should "hopefully work" although prob it doesn't so dm me on discord if u can help---\\
 GM_addStyle ( `
@@ -380,5 +413,5 @@ adblock4();
 adblock2();
 adblock();
 adblock5();
- 
- 
+
+
