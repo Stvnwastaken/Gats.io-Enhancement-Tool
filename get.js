@@ -1,17 +1,20 @@
 // ==UserScript==
-// @name         G.E.T Gats Enhancement Tool Alpha Version 1.0.4
+// @name         G.E.T Gats Enhancement Tool Alpha Version 1.0.5
 // @namespace    http://tampermonkey.net/
-// @version      Alpha 1.0.4
+// @version      Alpha 1.0.5
 // @author       LightLord
 // @match        https://gats.io/
 // @icon         https://www.google.com/s2/favicons?domain=gats.io
 // @description   Gats.io-Enhancement-Tool (G.E.T) This is a script for Gats.io that enhances user experience by customizing the interface. This is still in the Alpha stage so don't expect it to be a completely official, developed, and perfect script.
 // @grant        GM_addStyle
+// @downloadURL  https://github.com/LightLordYT/Gats.io-Enhancement-Tool/blob/main/get.js
+// @downloadURL  https://greasyfork.org/en/scripts/430140-g-e-t-gats-enhancement-tool-alpha-version-1-0-4
 // @history      1.0.0 alpha version
 // @history      1.0.1 alpha version added title
 // @history      1.0.2 added other customization stuff
 // @history      1.0.3 disabled canvas to fix glitch
 // @history      1.0.4 fixed css for top scores and play also credit for myself XD
+// @history      1.0.5 checks for update
 // ==/UserScript==
 
 ///===--- INFORMATION ---===\\\
@@ -86,7 +89,7 @@
 //--- checks to see if script is running and gives new logo (if you don't see an alert before the page finishes loading the script is not working)---\\
 function scriptRunning() {
 
-    alert("Injected G.E.T Alpha V1.0.4");
+    alert("Injected G.E.T Alpha V1.0.5");
     document.getElementById("gatsLogo").src = "https://i.imgur.com/aOG03yv.png"
 };
 
@@ -97,7 +100,7 @@ var message = document.getElementById("announcementMessage");
 
 window.onload = function () {
     document.getElementById("gameadsbannerpic").innerHTML = "add deleted (beta)";
-    document.title = "G.E.T V1.0.4";
+    document.title = "G.E.T V1.0.5";
   var newM = "All Game Enhancement Tools (G.E.T) Discord coming out soon!";
   message.textContent = newM;
 };
