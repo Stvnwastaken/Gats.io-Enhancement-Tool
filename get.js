@@ -1,7 +1,7 @@
 // ==UserScript==
-// @name         G.E.T Gats Enhancement Tool Alpha Version 1.0.3
+// @name         G.E.T Gats Enhancement Tool Alpha Version 1.0.4
 // @namespace    http://tampermonkey.net/
-// @version      Alpha 1.0.3
+// @version      Alpha 1.0.4
 // @author       LightLord
 // @match        https://gats.io/
 // @icon         https://www.google.com/s2/favicons?domain=gats.io
@@ -10,7 +10,8 @@
 // @history      1.0.0 alpha version
 // @history      1.0.1 alpha version added title
 // @history      1.0.2 added other customization stuff
-// @history      1.0.3 disabled part of gui to fix bug
+// @history      1.0.3 disabled canvas to fix glitch
+// @history      1.0.4 fixed css for top scores and play also credit for myself XD
 // ==/UserScript==
 
 ///===--- INFORMATION ---===\\\
@@ -85,7 +86,7 @@
 //--- checks to see if script is running and gives new logo (if you don't see an alert before the page finishes loading the script is not working)---\\
 function scriptRunning() {
 
-    alert("Injected G.E.T Alpha V0.01");
+    alert("Injected G.E.T Alpha V1.0.4");
     document.getElementById("gatsLogo").src = "https://i.imgur.com/aOG03yv.png"
 };
 
@@ -96,7 +97,7 @@ var message = document.getElementById("announcementMessage");
 
 window.onload = function () {
     document.getElementById("gameadsbannerpic").innerHTML = "add deleted (beta)";
-    document.title = "G.E.T V1.0.0";
+    document.title = "G.E.T V1.0.4";
   var newM = "All Game Enhancement Tools (G.E.T) Discord coming out soon!";
   message.textContent = newM;
 };
@@ -106,6 +107,7 @@ window.addEventListener("load", function(event) {
 );
 window.addEventListener("load", function(event) {
     document.getElementById('moreGamesFooter').style.background = "#13AAFF"
+    document.getElementById('moreGamesFooter').innerHTML = "G.E.T made by LightLord"
   }
 );
 window.addEventListener("load", function(event) {
@@ -146,6 +148,7 @@ window.addEventListener("load", function(event) {
 );
 window.addEventListener("load", function(event) {
     document.getElementById('playButton').style.background = "#13AAFF"
+    document.getElementById('playButton').innerHTML = "Deploy"
   }
 );
 window.addEventListener("load", function(event) {
@@ -325,7 +328,7 @@ if (hide4.style.display == "none") {
 GM_addStyle ( `
 
     .high-score-row {
-    color: white
+    color: black
     };
 
    
