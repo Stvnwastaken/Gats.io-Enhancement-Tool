@@ -1,7 +1,7 @@
 // ==UserScript==
-// @name         G.E.T Gats Enhancement Tool Alpha Version 1.1.6
+// @name         G.E.T Gats Enhancement Tool Alpha Version 1.2.6
 // @namespace    http://tampermonkey.net/
-// @version      Alpha 1.1.6
+// @version      Alpha 1.2.6
 // @author       LightLord
 // @match        https://gats.io/
 // @icon         https://www.google.com/s2/favicons?domain=gats.io
@@ -21,7 +21,8 @@
     V1.0.4 Fixed css for top scores and play also credit for myself XD
     V1.0.5 Checks for update
     V1.1.5 Redid gui also did some changelog/alert/stats stuff
-    V1.1.6 Made the homescreen customization match*/
+    V1.1.6 Made the homescreen customization match
+    V1.2.6 Added Tips and Tricks and Combos for each gun*/
 
 ///===--- INFORMATION ---===\\\
 
@@ -65,7 +66,6 @@
 //=- Note To Self -=\\
 // "https://i.imgur.com/aOG03yv.png"; (src of the new logo) \\
 //"https://i.imgur.com/Wer58qF.png"; (src of new background) \\
-//"https://i.imgur.com/se25y8T.png"; (src of updates)\\
 
 //FINALLY, ENJOY THE SCRIPT!!!\\
 
@@ -74,11 +74,11 @@
 //--- checks to see if script is running and gives new logo (if you don't see an alert before the page finishes loading the script is not working)---\\
 function scriptRunning() {
 
-    var alerted = localStorage.getItem('alerted') || '';
+  var alerted = localStorage.getItem('alerted') || '';
     if (alerted != 'yes') {
    if (window.confirm('Want to see entire changelog?'))
 {
-alert("Version 1.0.1 Added Title\nVersion 1.0.2 Added other customization stuff\n Version 1.0.3 Disabled canvas to fix glitch\nVersion 1.0.4 Fixed css for top scores and play also credit for myself XD\nVersion 1.0.5 Checks for update\nVersion 1.1.5 Redid gui also other alert/changelog/stats stuff\nVersion 1.1.6 Made the homescreen customization match")
+alert("Version 1.0.1 Added Title\nVersion 1.0.2 Added other customization stuff\n Version 1.0.3 Disabled canvas to fix glitch\nVersion 1.0.4 Fixed css for top scores and play also credit for myself XD\nVersion 1.0.5 Checks for update\nVersion 1.1.5 Redid gui also other alert/changelog/stats stuff\nVersion 1.1.6 Made the homescreen customization match\nVersion 1.2.6 Added Tips and Tricks and Combos for each gun.")
 }
 else
 {
@@ -87,7 +87,7 @@ alert("continue to game?")
         localStorage.setItem('alerted','yes');
     }
 
-    alert("Injected G.E.T Version 1.1.6 (It might take a while for code to load depending on how powerful you computer is)")
+    alert("Injected G.E.T Version 1.2.6 (It might take a while for code to load depending on how powerful you computer is)")
     document.getElementById("gatsLogo").src = "https://i.imgur.com/aOG03yv.png"
 };
 
@@ -98,8 +98,8 @@ var message = document.getElementById("announcementMessage");
 
 window.onload = function () {
     document.getElementById("gameadsbannerpic").innerHTML = "add deleted (beta)";
-    document.title = "G.E.T  V1.1.6";
-  var newM = "All Game Enhancement Tools (G.E.T) Discord coming out soon!";
+    document.title = "G.E.T  V1.2.6";
+  var newM = "All Game Enhancement Tools (G.E.T) Discord coming out soon! (Also click this text to see tips and tricks/combos)";
   message.textContent = newM;
 };
 window.addEventListener("load", function(event) {
@@ -123,7 +123,7 @@ var link = document.getElementById("infoFooter")
 link.addEventListener("click", () => {
 if (window.confirm('Press Ok to see changelog. Press cancel to see stats'))
 {
-alert("Version 1.0.1 Added Title\nVersion 1.0.2 Added other customization stuff\n Version 1.0.3 Disabled canvas to fix glitch\nVersion 1.0.4 Fixed css for top scores and play also credit for myself XD\nVersion 1.0.5 Checks for update\nVersion 1.1.5 Redid gui also other alert/changelog/stats stuff\nVersion 1.1.6 Made the homescreen customization match")
+alert("Version 1.0.1 Added Title\nVersion 1.0.2 Added other customization stuff\n Version 1.0.3 Disabled canvas to fix glitch\nVersion 1.0.4 Fixed css for top scores and play also credit for myself XD\nVersion 1.0.5 Checks for update\nVersion 1.1.5 Redid gui also other alert/changelog/stats stuff\nVersion 1.1.6 Made the homescreen customization match\n Version 1.2.6 Added Tips and Tricks and Combos for each gun.")
 }
 else
 {
@@ -160,6 +160,17 @@ document.getElementById("green").style.borderRadius ="100px";
 document.getElementById("blue").style.borderRadius ="100px";
 document.getElementById("purple").style.borderRadius ="100px";
 document.getElementById("announcementMessage").style.color = "white"
+});
+var newP = document.getElementById("announcementMessage")
+newP.addEventListener("click", () => {
+if (window.confirm('Press Ok to see Combos. Press cancel to see Tips and Tricks'))
+{
+alert("Combo Snipe and Go(In my opinion the best sniper combo): Gun Choice: Sniper Having 1 Armor. Slot 1: Speed. Slot2: Grenade/Gas/Knife. Slot3: Damage.\nCombo Up Close: Gun Choice: smg/shotgun 1 Amor. Slot 1: Range. Slot 2: Dash/Medkit/Shield. Slot 3: Speed.\nCombo Spam: Gun Choice: lmg/assault 1 Amor. Slot 1: Range. Slot 2: Grenade/Gas. Slot 3: Speed.\nCombo Spam: Gun Choice: pistol 1 Amor. Slot 1: Damage. Slot 2: Grenade/Gas/Medkit. Slot 3: Speed.\nThese are the only combos for now. If you want more combos or want to add a combo that you like join the discord and tell me!")
+}
+else
+{
+alert("Tips and Tricks:\n Knife: For knife use when people are bunched up to maximized damage or when a person is really close. Throw knife and shoot sniper almost at the same time towards the left and right of a person so when they try to run the either get hit by sniper or killed by knife.\n Grenade: Most useful when opponent is behind cover. Throw it at them, forcing them to go in one direction, shoot in that direction so that your shot and the grenade both hit.\nTips and Tricks:\n Medkit: For medkit use when you get hit even if it is a little bit since sniper can easily kill you.\n Dash: Most useful when opponent is behind cover. Dash in an unpredictable way toward them and shoot them(most effective if gun is lmg,smg, or shotgun). If you want you can dash, quickly shoot and dash out to avoid taking any damage.\nGas: Most useful when opponent is behind cover. You can spam it so they have to keep on running and when they are out in the open shoot them. This way you can pinch them a lot.\nThese are the only tips and tricks for now. If you want more tips and tricks or want to add a tip or trick that you like join the discord and tell me!")
+}
 });
 var red = document.getElementById("red")
 red.addEventListener("click", changeColorRed);
@@ -361,5 +372,6 @@ adblock4();
 adblock2();
 adblock();
 adblock5();
+
 
 
