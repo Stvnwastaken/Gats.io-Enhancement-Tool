@@ -1,7 +1,7 @@
 // ==UserScript==
-// @name         G.E.T Gats Enhancement Tool Alpha Version 1.1.5
+// @name         G.E.T Gats Enhancement Tool Alpha Version 1.1.6
 // @namespace    http://tampermonkey.net/
-// @version      Alpha 1.1.5
+// @version      Alpha 1.1.6
 // @author       LightLord
 // @match        https://gats.io/
 // @icon         https://www.google.com/s2/favicons?domain=gats.io
@@ -20,7 +20,8 @@
     V1.0.3 Disabled canvas to fix glitch
     V1.0.4 Fixed css for top scores and play also credit for myself XD
     V1.0.5 Checks for update
-    V1.1.5 Redid gui also did some changelog/alert/stats stuff*/
+    V1.1.5 Redid gui also did some changelog/alert/stats stuff
+    V1.1.6 Made the homescreen customization match*/
 
 ///===--- INFORMATION ---===\\\
 
@@ -77,7 +78,7 @@ function scriptRunning() {
     if (alerted != 'yes') {
    if (window.confirm('Want to see entire changelog?'))
 {
-alert("Version 1.0.1 Added Title\nVersion 1.0.2 Added other customization stuff\n Version 1.0.3 Disabled canvas to fix glitch\nVersion 1.0.4 Fixed css for top scores and play also credit for myself XD\nVersion 1.0.5 Checks for update\nVersion 1.1.5 Redid gui also other alert/changelog/stats stuff")
+alert("Version 1.0.1 Added Title\nVersion 1.0.2 Added other customization stuff\n Version 1.0.3 Disabled canvas to fix glitch\nVersion 1.0.4 Fixed css for top scores and play also credit for myself XD\nVersion 1.0.5 Checks for update\nVersion 1.1.5 Redid gui also other alert/changelog/stats stuff\nVersion 1.1.6 Made the homescreen customization match")
 }
 else
 {
@@ -86,7 +87,7 @@ alert("continue to game?")
         localStorage.setItem('alerted','yes');
     }
 
-    alert("Injected G.E.T Version 1.1.5 (It might take a while for code to load depending on how powerful you computer is)")
+    alert("Injected G.E.T Version 1.1.6 (It might take a while for code to load depending on how powerful you computer is)")
     document.getElementById("gatsLogo").src = "https://i.imgur.com/aOG03yv.png"
 };
 
@@ -97,7 +98,7 @@ var message = document.getElementById("announcementMessage");
 
 window.onload = function () {
     document.getElementById("gameadsbannerpic").innerHTML = "add deleted (beta)";
-    document.title = "G.E.T  V1.1.5";
+    document.title = "G.E.T  V1.1.6";
   var newM = "All Game Enhancement Tools (G.E.T) Discord coming out soon!";
   message.textContent = newM;
 };
@@ -122,7 +123,7 @@ var link = document.getElementById("infoFooter")
 link.addEventListener("click", () => {
 if (window.confirm('Press Ok to see changelog. Press cancel to see stats'))
 {
-alert("Version 1.0.1 Added Title\nVersion 1.0.2 Added other customization stuff\n Version 1.0.3 Disabled canvas to fix glitch\nVersion 1.0.4 Fixed css for top scores and play also credit for myself XD\nVersion 1.0.5 Checks for update\nVersion 1.1.5 Redid gui also other alert/changelog/stats stuff")
+alert("Version 1.0.1 Added Title\nVersion 1.0.2 Added other customization stuff\n Version 1.0.3 Disabled canvas to fix glitch\nVersion 1.0.4 Fixed css for top scores and play also credit for myself XD\nVersion 1.0.5 Checks for update\nVersion 1.1.5 Redid gui also other alert/changelog/stats stuff\nVersion 1.1.6 Made the homescreen customization match")
 }
 else
 {
@@ -173,6 +174,7 @@ document.getElementById('weaponTitle').style.background = "#A10000"
 document.getElementById('weaponBacking').style.background = "#A10000"
 document.getElementById('playButton').style.background = "#FF0000"
 document.getElementById('playButtonContainer').style.background = "#A10000"
+    document.getElementById("slct").style.backgroundColor= "red";
 }
 
 var blue = document.getElementById("blue")
@@ -188,6 +190,8 @@ document.getElementById('weaponTitle').style.background = "#001992"
 document.getElementById('weaponBacking').style.background = "#001992"
 document.getElementById('playButton').style.background = "#13AAFF"
 document.getElementById('playButtonContainer').style.background = "#001992"
+        document.getElementById("slct").style.backgroundColor= "blue";
+
 }
 
 /*var pink = document.getElementById("pink")
@@ -203,6 +207,8 @@ document.getElementById('weaponTitle').style.background = "#CF004F"
 document.getElementById('weaponBacking').style.background = "#CF004F"
 document.getElementById('playButton').style.background = "#FF0061"
 document.getElementById('playButtonContainer').style.background = "#CF004F"
+    document.getElementById("slct").style.backgroundColor= "pink";
+
 }*/
 
 var green = document.getElementById("green")
@@ -218,6 +224,8 @@ document.getElementById('weaponTitle').style.background = "#10CF00 "
 document.getElementById('weaponBacking').style.background = "#10CF00 "
 document.getElementById('playButton').style.background = "#25FF23"
 document.getElementById('playButtonContainer').style.background = "#10CF00"
+        document.getElementById("slct").style.backgroundColor= "green";
+
 }
 
 /*var yellow = document.getElementById("yellow")
@@ -231,6 +239,8 @@ document.getElementById('armorTitle').style.background = "#C8BE00 "
 document.getElementById('armorBacking').style.background = "#C8BE00 "
 document.getElementById('weaponTitle').style.background = "#E5DA00 "
 document.getElementById('weaponBacking').style.background = "#C8BE00 "
+    document.getElementById("slct").style.backgroundColor= "yellow";
+
 }
 
 var orange = document.getElementById("orange")
@@ -244,6 +254,8 @@ document.getElementById('armorTitle').style.background = "#C99400 "
 document.getElementById('armorBacking').style.background = "#C99400 "
 document.getElementById('weaponTitle').style.background = "#E8AA00 "
 document.getElementById('weaponBacking').style.background = "#C99400 "
+    document.getElementById("slct").style.backgroundColor= "orange";
+
 }*/
 
 
@@ -288,7 +300,7 @@ GM_addStyle ( `
 ` );
 
 //chatbox extension
-document.getElementById("chatbox").setAttribute('maxlength',50);
+document.getElementById("chatbox").setAttribute('maxlength',100);
 document.getElementById("chatbox").style.borderRadius = "25px";
 document.getElementById("chatbox").style.backgroundColor = "blue";
 document.getElementById("chatbox").style.borderColor = "black";
