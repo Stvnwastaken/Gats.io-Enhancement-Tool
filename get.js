@@ -1,21 +1,26 @@
 // ==UserScript==
-// @name         G.E.T Gats Enhancement Tool Alpha Version 1.0.5
+// @name         G.E.T Gats Enhancement Tool Alpha Version 1.1.5
 // @namespace    http://tampermonkey.net/
-// @version      Alpha 1.0.5
+// @version      Alpha 1.1.5
 // @author       LightLord
 // @match        https://gats.io/
 // @icon         https://www.google.com/s2/favicons?domain=gats.io
-// @description   Gats.io-Enhancement-Tool (G.E.T) This is a script for Gats.io that enhances user experience by customizing the interface. This is still in the Alpha stage so don't expect it to be a completely official, developed, and perfect script.
+// @description   Gats.io-Enhancement-Tool (G.E.T) This is a script for Gats.io that customizes the gui This is still in the Alpha stage so don't expect it to be a completely official, developed, and perfect script.
 // @grant        GM_addStyle
 // @downloadURL  https://github.com/LightLordYT/Gats.io-Enhancement-Tool/blob/main/get.js
-// @downloadURL  https://greasyfork.org/en/scripts/430140-g-e-t-gats-enhancement-tool-alpha-version-1-0-4
-// @history      1.0.0 alpha version
-// @history      1.0.1 alpha version added title
-// @history      1.0.2 added other customization stuff
-// @history      1.0.3 disabled canvas to fix glitch
-// @history      1.0.4 fixed css for top scores and play also credit for myself XD
-// @history      1.0.5 checks for update
+// @downloadURL  https://greasyfork.org/en/scripts/430140-g-e-t-gats-enhancement-tool-alpha-version-1-0-5
+// @updateURL    https://greasyfork.org/en/scripts/430140-g-e-t-gats-enhancement-tool-alpha-version-1-0-5
+// @updateURL    https://github.com/LightLordYT/Gats.io-Enhancement-Tool/blob/main/get.js
 // ==/UserScript==
+
+ /* Version Updates:
+    V1.0.0 Alpha version release
+    V1.0.1 Alpha version added title
+    V1.0.2 Added other customization stuff
+    V1.0.3 Disabled canvas to fix glitch
+    V1.0.4 Fixed css for top scores and play also credit for myself XD
+    V1.0.5 Checks for update
+    V1.1.5 Redid gui also did some changelog/alert/stats stuff*/
 
 ///===--- INFORMATION ---===\\\
 
@@ -35,28 +40,12 @@
 //--- So basically copy paste code into new tampermonkey script(delete current code in the new script first) and press file save.
 
 
-//===--- Problems and Bugs ---===\\
-//--- Any problem with this script like a bug in it or a glitch contact me so I can fix it :) ---\\
-
-
 //===--- Contact Information ---===\\
 //--- If you want to ask any questions or collab on a coding project you can reach me through github,discord, or greasyfork. Please don't contact me with unnecessary stuff---\\
 //--- Discord: LightLord#4261
 //--- Github: https://github.com/LightLordYT
 //--- GreasyFork: https://greasyfork.org/en/users/798398-lightlord
 
-
-//===--- Updates Information ---===\\
-//--- When I push out new updates tampermonkey should detect it and ask if you want to update it. If not just look at github or greasyfork to see if there are new updates ---\\
-//--- I will have version history above so you can see what I did for each new update. The big number 1.0.0 the one is the big number. ---\\
-//--- If the big number is changed that means that it is a really big update like new features or something. The first zero the one closest to one stands for medium updates ---\\
-//--- Medium updates are like adding one feature and fixing or improving a feature or something. The last zero the one farthest for the one is small updates.---\\
-//--- Small updates are like fixing bugs and glitches here and there basically you won't notice a big difference if you use for example 1.0.1 and 1.0.0---\\
-
-
-//===--- Copying ---==\\
-//--- This script was completely original and please don't copy this script and present it like it was yours and you own it. ---\\
-//--- I made almost everything in this script by myself including the images ---\\
 
 //===--- Credits ---==\\
 //--- I did use a lot of Vaakir's script for the customization and as reference so big shoutout to him! his youtube channel is here: https://www.youtube.com/channel/UC2m-9cAoT8EEO2dqWlk4Yfw---\\
@@ -69,18 +58,13 @@
 //--- if you don't like the colors DON"T change the color name but just change the color value like for example #E8AA00 is color value go to here and pick a color: https://htmlcolorcodes.com/color-picker/
 //--- if you can help with the probelm stated above contact me:)---\\
 
-//===--- How to start editing/hacking games yourself! ---==\\
-//--- this does not require dev tools you can simply just go to the page and press ctrl+u or right click and press page source. There you can see the html and get some important and useful ids which you can change etc
-//--- also if you click on the .js and .css files you can see the css and js code. If you want to change the look go to css if you want to change like interaction such as "I think" aimbot and etc
-//--- call upon the ids/classes using document.getElementbyId or document.getElementByClassName. I recommend looking at khan academy for more info about it
-
 //===--- My Youtube channel (optional) ---==\\
 //--- if you interested in learning more about graphic design, coding, and some game content my channel is available : http://www.youtube.com/channel/UCGFfoQy07ho5wF_5duaz1vQ
 
 //=- Note To Self -=\\
 // "https://i.imgur.com/aOG03yv.png"; (src of the new logo) \\
 //"https://i.imgur.com/Wer58qF.png"; (src of new background) \\
-
+//"https://i.imgur.com/se25y8T.png"; (src of updates)\\
 
 //FINALLY, ENJOY THE SCRIPT!!!\\
 
@@ -89,7 +73,20 @@
 //--- checks to see if script is running and gives new logo (if you don't see an alert before the page finishes loading the script is not working)---\\
 function scriptRunning() {
 
-    alert("Injected G.E.T Alpha V1.0.5");
+    var alerted = localStorage.getItem('alerted') || '';
+    if (alerted != 'yes') {
+   if (window.confirm('Want to see entire changelog?'))
+{
+alert("Version 1.0.1 Added Title\nVersion 1.0.2 Added other customization stuff\n Version 1.0.3 Disabled canvas to fix glitch\nVersion 1.0.4 Fixed css for top scores and play also credit for myself XD\nVersion 1.0.5 Checks for update\nVersion 1.1.5 Redid gui also other alert/changelog/stats stuff")
+}
+else
+{
+alert("continue to game?")
+}
+        localStorage.setItem('alerted','yes');
+    }
+
+    alert("Injected G.E.T Version 1.1.5 (It might take a while for code to load depending on how powerful you computer is)")
     document.getElementById("gatsLogo").src = "https://i.imgur.com/aOG03yv.png"
 };
 
@@ -100,74 +97,69 @@ var message = document.getElementById("announcementMessage");
 
 window.onload = function () {
     document.getElementById("gameadsbannerpic").innerHTML = "add deleted (beta)";
-    document.title = "G.E.T V1.0.5";
+    document.title = "G.E.T  V1.1.5";
   var newM = "All Game Enhancement Tools (G.E.T) Discord coming out soon!";
   message.textContent = newM;
 };
 window.addEventListener("load", function(event) {
-    document.getElementById('highScoresHeading').style.background = "#13AAFF"
-  }
-);
-window.addEventListener("load", function(event) {
-    document.getElementById('moreGamesFooter').style.background = "#13AAFF"
-    document.getElementById('moreGamesFooter').innerHTML = "G.E.T made by LightLord"
-  }
-);
-window.addEventListener("load", function(event) {
-    document.getElementById('infoFooter').style.background = "#13AAFF"
-  }
-);
-window.addEventListener("load", function(event) {
-    document.getElementById('registerButton').style.background = "#13AAFF"
-  }
-);
-window.addEventListener("load", function(event) {
-    document.getElementById('weaponBacking').style.background = "#001992"
-  }
-);
-window.addEventListener("load", function(event) {
-    document.getElementById('weaponTitle').style.background = "#001992"
-  }
-);
-window.addEventListener("load", function(event) {
-    document.getElementById('armorBacking').style.background = "#001992"
-  }
-);
-window.addEventListener("load", function(event) {
-    document.getElementById('armorTitle').style.background = "#001992"
-  }
-);
-window.addEventListener("load", function(event) {
-    document.getElementById('colorBacking').style.background = "#001992"
-  }
-);
-window.addEventListener("load", function(event) {
-    document.getElementById('colorTitle').style.background = "#001992"
-  }
-);
-window.addEventListener("load", function(event) {
-    document.getElementById('reconnectButton').style.background = "#13AAFF"
-  }
-);
-window.addEventListener("load", function(event) {
-    document.getElementById('playButton').style.background = "#13AAFF"
-    document.getElementById('playButton').innerHTML = "Deploy"
-  }
-);
-window.addEventListener("load", function(event) {
-    document.getElementById('playButtonContainer').style.background = "#001992"
-  }
-);
-
-window.addEventListener("load", function(event) {
-    document.getElementById('loginButton').style.background = "#13AAFF"
-  }
-);
-window.addEventListener("load", function(event) {
-    document.getElementById('logoutButton').style.background = "#13AAFF"
-  }
-);
-
+document.getElementById('highScoresHeading').style.background = "#13AAFF"
+document.getElementById('moreGamesFooter').style.background = "#13AAFF"
+document.getElementById('moreGamesFooter').innerHTML = "G.E.T made by LightLord"
+var options = document.getElementById("moreGamesFooter")
+options.addEventListener("click", () => {
+if (window.confirm('Press Ok to see my G.E.T github repository. Press cancel to see my greasyfork'))
+{
+window.open("https://github.com/LightLordYT/Gats.io-Enhancement-Tool","_blank")
+}
+else
+{
+window.open('https://greasyfork.org/en/users/798398-lightlord', '_blank');
+}
+});
+document.getElementById('infoFooter').style.background = "#13AAFF"
+document.getElementById('infoFooter').innerHTML = "Click to see G.E.T Changelog and Gats.io Stats"
+var link = document.getElementById("infoFooter")
+link.addEventListener("click", () => {
+if (window.confirm('Press Ok to see changelog. Press cancel to see stats'))
+{
+alert("Version 1.0.1 Added Title\nVersion 1.0.2 Added other customization stuff\n Version 1.0.3 Disabled canvas to fix glitch\nVersion 1.0.4 Fixed css for top scores and play also credit for myself XD\nVersion 1.0.5 Checks for update\nVersion 1.1.5 Redid gui also other alert/changelog/stats stuff")
+}
+else
+{
+window.open('https://stats.gats.io', '_blank');
+}
+});
+document.getElementById("infoFooter").style.color = "black"
+document.getElementById("moreGamesFooter").style.color = "black"
+document.getElementById('registerButton').style.background = "#13AAFF"
+document.getElementById('weaponBacking').style.background = "#001359"
+document.getElementById('weaponTitle').style.background = "#001359"
+document.getElementById('armorBacking').style.background = "#001359"
+document.getElementById('colorBacking').style.background = "#001359"
+document.getElementById('colorTitle').style.background = "#001359"
+document.getElementById('armorTitle').style.background = "#001359"
+document.getElementById('reconnectButton').style.background = "#13AAFF"
+document.getElementById('playButton').style.background = "#13AAFF"
+document.getElementById('playButton').innerHTML = "Deploy"
+document.getElementById('playButtonContainer').style.background = "#001992"
+document.getElementById('loginButton').style.background = "#13AAFF"
+document.getElementById('logoutButton').style.background = "#13AAFF"
+document.getElementById("gametypeDropdown").style.borderRadius ="10px";
+document.getElementById("serversBtn").style.borderRadius ="10px";
+document.getElementById("playButton").style.borderRadius = "15px";
+document.getElementById("playButton").style.borderColor = "black";
+document.getElementById("slct").style.backgroundColor = "blue";
+document.getElementById("slct").style.borderRadius = "25px";
+document.getElementById("loginButton").style.borderRadius = "20px";
+document.getElementById("registerButton").style.borderRadius = "20px";
+document.getElementById("red").style.borderRadius ="100px";
+document.getElementById("orange").style.borderRadius ="100px";
+document.getElementById("yellow").style.borderRadius ="100px";
+document.getElementById("green").style.borderRadius ="100px";
+document.getElementById("blue").style.borderRadius ="100px";
+document.getElementById("purple").style.borderRadius ="100px";
+document.getElementById("announcementMessage").style.color = "white"
+});
 var red = document.getElementById("red")
 red.addEventListener("click", changeColorRed);
 
@@ -259,76 +251,13 @@ document.getElementById('weaponBacking').style.background = "#C99400 "
 
 scriptRunning();
 
-/*let overlayHTML = `
-<link href="https://fonts.googleapis.com/css?family=Orbitron:900" rel="stylesheet"/>
-<div id="box">
-    <div class="ou" id="box2">
-       <canvas id="myCanvas" width="2000%" height="2000%"></canvas>
-    </div>
-</div>
-<style>
-#box {
-    z-index: 1;
-    position: absolute;
-    bottom: 0vh;
-    left: 0px;}
-#box2 {
-    padding: 15px;
-    margin-bottom: 5px}
-section {
-    display: flex;
-    justify-content: space-between;margin:5px;}
-.ou {
-    background-color: rgba(0,0,102);
-    letter-spacing: 3px;
-
-    font-weight: bold;
-    font-size: 15px;
-    font-family: Orbitron;
-    color:white;}
-</style>
-`
-let overlay = document.createElement("div");
-    overlay.innerHTML = overlayHTML;
-    document.body.appendChild(overlay);
-var canvas = document.getElementById('c');
-var ctx = canvas.getContext('2d');
-var btn = document.getElementById("playButton")
-var hide = document.getElementById("myCanvas")
-var hide2 = document.getElementById("box")
-var hide3 = document.getElementById("box2")
-var hide4 = document.getElementsByClassName("ou")
-btn.onclick = function () {
-if (hide.style.display == "none") {
-    hide.style.display = "block"
-}else{
-    hide.style.display = "none"
-}
-}
-btn.onclick = function () {
-if (hide2.style.display == "none") {
-    hide2.style.display = "block"
-}else{
-    hide2.style.display = "none"
-}
-}
-btn.onclick = function () {
-if (hide3.style.display == "none") {
-    hide3.style.display = "block"
-}else{
-    hide3.style.display = "none"
-}
-}
-btn.onclick = function () {
-if (hide4.style.display == "none") {
-    hide4.style.display = "block"
-}else{
-    hide4.style.display = "none"
-}
-}*/
 
 //--- useful styles to make interface look cooler + some other styles for general stuff like adblock(which  should "hopefully work" although prob it doesn't so dm me on discord if u can help---\\
 GM_addStyle ( `
+
+    #playButton {
+    color:black
+    };
 
     .high-score-row {
     color: black
@@ -336,9 +265,9 @@ GM_addStyle ( `
 
    
 
-   #gameadsbanner {
+   #gameadsbannerpic {
     position: fixed;
-   z-index:1;
+   z-index:-1;
     };
 
     #detect {
@@ -367,8 +296,10 @@ document.getElementById("chatbox").style.color = "white";
 
 
 //---v---adblock---v---\\ (doesn't really work so if any of you guys can help dm me)
+
+
 function adblock(){
-   var ad1 = document.getElementById("gameadsbanner"); ad1 .parentNode.removeChild(ad1);
+   var ad1 = document.getElementById("gameadsbannerpic"); ad1 .parentNode.removeChild(ad1);
    var ad2 = document.getElementById("detect"); ad2.parentNode.removeChild(ad2);
    var ad3 = document.getElementById("adRespawnLeft"); ad3.parentNode.removeChild(ad3);
    var ad4 = document.getElementById("adRespawnRight"); ad4.parentNode.removeChild(ad4);
