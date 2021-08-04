@@ -2,6 +2,16 @@
 This is a script for Gats.io that enhances user experience by customizing the interface.
 This is still in the Alpha stage so don't expect it to be a completely official, developed, and perfect script.
 
+# Features
+- customization of home screen
+- gui updated
+- css updated
+- extension of the chatbox changed the limit and other stuff
+- adblock(kinda works?)
+- changelog of G.E.T
+- added tips and tricks and combos list when you click the anouncement message
+- going to add auto upgrade soon
+
 # IMPORTANT AWARENESS
 some scripts unfortunately contain code that can take your personal information or data. Watch out for that.
 I am not an expert coder and took me a few months to fully develop this script for release. I am not that familiar with code taking personal information.
