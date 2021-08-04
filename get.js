@@ -124,7 +124,7 @@ var link = document.getElementById("infoFooter")
 link.addEventListener("click", () => {
 if (window.confirm('Press Ok to see changelog. Press cancel to see stats'))
 {
-alert("Version 1.0.1 Added Title\nVersion 1.0.2 Added other customization stuff\n Version 1.0.3 Disabled canvas to fix glitch\nVersion 1.0.4 Fixed css for top scores and play also credit for myself XD\nVersion 1.0.5 Checks for update\nVersion 1.1.5 Redid gui also other alert/changelog/stats stuff\nVersion 1.1.6 Made the homescreen customization match\n Version 1.2.6 Added Tips and Tricks and Combos for each gun.\nAdded fps,ms,bytes counter that can be changed by clicking on it.")
+alert("Version 1.0.1 Added Title\nVersion 1.0.2 Added other customization stuff\n Version 1.0.3 Disabled canvas to fix glitch\nVersion 1.0.4 Fixed css for top scores and play also credit for myself XD\nVersion 1.0.5 Checks for update\nVersion 1.1.5 Redid gui also other alert/changelog/stats stuff\nVersion 1.1.6 Made the homescreen customization match\n Version 1.2.6 Added Tips and Tricks and Combos for each gun.\nVersion 1.3.6 Added fps,ms,bytes counter that can be changed by clicking on it.")
 }
 else
 {
@@ -170,7 +170,7 @@ alert("Combo Snipe and Go(In my opinion the best sniper combo): Gun Choice: Snip
 }
 else
 {
-alert("Tips and Tricks:\n Knife: For knife use when people are bunched up to maximized damage or when a person is really close. Throw knife and shoot sniper almost at the same time towards the left and right of a person so when they try to run the either get hit by sniper or killed by knife.\n Grenade: Most useful when opponent is behind cover. Throw it at them, forcing them to go in one direction, shoot in that direction so that your shot and the grenade both hit.\nTips and Tricks:\n Medkit: For medkit use when you get hit even if it is a little bit since sniper can easily kill you.\n Dash: Most useful when opponent is behind cover. Dash in an unpredictable way toward them and shoot them(most effective if gun is lmg,smg, or shotgun). If you want you can dash, quickly shoot and dash out to avoid taking any damage.\nGas: Most useful when opponent is behind cover. You can spam it so they have to keep on running and when they are out in the open shoot them. This way you can pinch them a lot.\nThese are the only tips and tricks for now. If you want more tips and tricks or want to add a tip or trick that you like join the discord and tell me!")
+alert("Tips and Tricks:\n Knife: For knife use when people are bunched up to maximized damage or when a person is really close. Throw knife and shoot sniper almost at the same time towards the left and right of a person so when they try to run the either get hit by sniper or killed by knife.\n Grenade: Most useful when opponent is behind cover. Throw it at them, forcing them to go in one direction, shoot in that direction so that your shot and the grenade both hit.\n Medkit: For medkit use when you get hit even if it is a little bit since sniper can easily kill you.\n Dash: Most useful when opponent is behind cover. Dash in an unpredictable way toward them and shoot them(most effective if gun is lmg,smg, or shotgun). If you want you can dash, quickly shoot and dash out to avoid taking any damage.\nGas: Most useful when opponent is behind cover. You can spam it so they have to keep on running and when they are out in the open shoot them. This way you can pinch them a lot.\nThese are the only tips and tricks for now. If you want more tips and tricks or want to add a tip or trick that you like join the discord and tell me!")
 }
 });
 var red = document.getElementById("red")
@@ -383,5 +383,3 @@ adblock4();
 adblock2();
 adblock();
 adblock5();
-
-
