@@ -99,7 +99,7 @@ var message = document.getElementById("announcementMessage");
 window.onload = function () {
     document.getElementById("gameadsbannerpic").innerHTML = "add deleted (beta)";
     document.title = "G.E.T  V1.2.6";
-  var newM = "All Game Enhancement Tools (G.E.T) Discord coming out soon! (Also click this text to see tips and tricks/combos)";
+  var newM = "Going to add auto upgrade soon! stay tuned (Also click this text to see tips and tricks/combos)";
   message.textContent = newM;
 };
 window.addEventListener("load", function(event) {
@@ -277,6 +277,12 @@ scriptRunning();
 
 //--- useful styles to make interface look cooler + some other styles for general stuff like adblock(which  should "hopefully work" although prob it doesn't so dm me on discord if u can help---\\
 GM_addStyle ( `
+
+    #lgc {
+    position: fixed
+    z-index:-5
+    };
+
 
     #playButton {
     color:black
