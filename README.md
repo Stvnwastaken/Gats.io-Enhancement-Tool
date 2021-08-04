@@ -12,6 +12,7 @@ This script does not contain any sort of virus or anything the code is available
 # Installation
 I don't think it even works if you paste this code into the console(inspect element) and it is unnecessary anyway since tampermonkey is a code executor extension.
 So basically copy paste code into new tampermonkey script(delete current code in the new script first) and press file save.
+MAKE SURE TO GO TO THE TAMPERMONKEY DASHBOARD AND TURN THE SCRIPT ON. THEN REFRESH GATS.IO
 
 
 # Problems and Bugs 
