@@ -38,7 +38,7 @@ GreasyFork: https://greasyfork.org/en/users/798398-lightlord
 DON'T SPAM ME ABOUT HOW THIS IS A VIRUS READ ABOVE!!!
 
 # Contribution
-Help is always appreciated. If you want to help, want a feature, or found a problem, open an issue.
+Help is always appreciated. If you want to help, want a feature, or found a problem, open an issue(https://github.com/LightLordYT/Gats.io-Enhancement-Tool/issues).
 
 
 # Updates Information 
