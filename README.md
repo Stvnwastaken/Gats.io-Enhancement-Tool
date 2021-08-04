@@ -11,7 +11,7 @@ This is still in the Alpha stage so don't expect it to be a completely official,
 - changelog of G.E.T
 - added tips and tricks and combos list when you click the anouncement message
 - going to add auto upgrade soon
-- fps,ms, bytes counter
+- fps,ms, bytes counter that can be changed by clicking it
 
 
 # IMPORTANT AWARENESS
