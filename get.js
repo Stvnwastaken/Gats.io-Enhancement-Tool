@@ -1,11 +1,11 @@
 // ==UserScript==
-// @name         G.E.T Gats Enhancement Tool Alpha Version 1.3.6
+// @name         G.E.T Gats Enhancement Tool Beta Version 1.3.6
 // @namespace    http://tampermonkey.net/
-// @version      Alpha 1.3.6
+// @version      Beta 1.3.6
 // @author       LightLord
 // @match        https://gats.io/
 // @icon         https://www.google.com/s2/favicons?domain=gats.io
-// @description   Gats.io-Enhancement-Tool (G.E.T) This is a script for Gats.io that customizes the gui This is still in the Alpha stage so don't expect it to be a completely official, developed, and perfect script.
+// @description   Gats.io-Enhancement-Tool (G.E.T) This is a script for Gats.io that customizes the gui This is still in the Beta stage so don't expect it to be a completely developed, and perfect script.
 // @grant        GM_addStyle
 // ==/UserScript==
 
@@ -158,6 +158,8 @@ document.getElementById("blue").style.borderRadius ="100px";
 document.getElementById("purple").style.borderRadius ="100px";
 document.getElementById("announcementMessage").style.color = "white"
 });
+
+
 var newP = document.getElementById("announcementMessage")
 newP.addEventListener("click", () => {
 if (window.confirm('Press Ok to see Combos. Press cancel to see Tips and Tricks'))
