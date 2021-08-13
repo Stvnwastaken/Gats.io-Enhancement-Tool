@@ -1,6 +1,6 @@
 # Gats.io-Enhancement-Tool (G.E.T)
 This is a script for Gats.io that enhances user experience by customizing the interface.
-This is still in the Alpha stage so don't expect it to be a completely official, developed, and perfect script.
+This is still in the Beta stage so don't expect it to be a completely developed, and perfect script.
 
 # Features
 - customization of home screen
