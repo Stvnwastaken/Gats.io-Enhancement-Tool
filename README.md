@@ -18,9 +18,8 @@ This is still in the Beta stage so don't expect it to be a completely developed,
 
 # IMPORTANT AWARENESS
 some scripts unfortunately contain code that can take your personal information or data. Watch out for that.
-I am not an expert coder and took me a few months to fully develop this script for release. I am not that familiar with code taking personal information.
-I heard that anything with document.cookie in the script might be potentially there to take info or something just as bad, I am not exactly sure about this though. Pretty sure document.cookie stores data based on the client's actions?
-Please do not abuse this script in gats.io or it will ruin the game for others. I made this script since I thought the game started to become boring. ---\\
+I made this script since I thought the game started to become boring.
+It was to kinda help self learn a bit more about js. DON'T COME COMPLAINING THERE IS A VIRUS IT IS OPENSOURCE.
 This script does not contain any sort of virus or anything the code is available in get.js(https://github.com/LightLordYT/Gats.io-Enhancement-Tool/blob/main/get.js) anyway. Also the adblock isn't one hundred percent perfect...
 
 # Installation
