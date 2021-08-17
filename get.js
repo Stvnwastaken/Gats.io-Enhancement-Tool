@@ -1,13 +1,14 @@
 // ==UserScript==
-// @name         G.E.T Gats Enhancement Tool Beta Version 1.4.7
+// @name         G.E.T Gats Enhancement Tool Beta Version 1.4.8
 // @namespace    http://tampermonkey.net/
-// @version      Beta 1.4.7
+// @version      Beta 1.4.8
 // @author       LightLord
 // @match        https://gats.io/
 // @icon         https://www.google.com/s2/favicons?domain=gats.io
 // @description  Gats.io-Enhancement-Tool (G.E.T) This is a script for Gats.io that customizes the gui This is still in the Beta stage so don't expect it to be a completely developed, and perfect script.
 // @require      https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js
 // @grant        GM_addStyle
+// @compatible   chrome+tampermonkey
 // ==/UserScript==
 /* globals jQuery, $, waitForKeyElements */
 
@@ -23,7 +24,8 @@
     V1.1.6 Made the homescreen customization match
     V1.2.6 Added Tips and Tricks and Combos for each gun
     V1.3.6 Added fps,ms,bytes counter
-    V1.4.7 Added jQuery and added other stuff*/
+    V1.4.7 Added jQuery and added other stuff
+    V1.4.8 Added compatibility*/
 
 ///===--- INFORMATION ---===\\\
 
@@ -81,7 +83,7 @@ function scriptRunning() {
     if (alerted != 'yes') {
    if (window.confirm('Want to see entire changelog?'))
 {
-alert("Version 1.0.1 Added Title\nVersion 1.0.2 Added other customization stuff\n Version 1.0.3 Disabled canvas to fix glitch\nVersion 1.0.4 Fixed css for top scores and play also credit for myself XD\nVersion 1.0.5 Checks for update\nVersion 1.1.5 Redid gui also other alert/changelog/stats stuff\nVersion 1.1.6 Made the homescreen customization match\nVersion 1.2.6 Added Tips and Tricks and Combos for each gun.\nVersion 1.3.6 Added fps,ms,bytes counter that can be switched by clicking it.\nVersion 1.4.7 Added jQuery and other stuff")
+alert("Version 1.0.1 Added Title\nVersion 1.0.2 Added other customization stuff\n Version 1.0.3 Disabled canvas to fix glitch\nVersion 1.0.4 Fixed css for top scores and play also credit for myself XD\nVersion 1.0.5 Checks for update\nVersion 1.1.5 Redid gui also other alert/changelog/stats stuff\nVersion 1.1.6 Made the homescreen customization match\nVersion 1.2.6 Added Tips and Tricks and Combos for each gun.\nVersion 1.3.6 Added fps,ms,bytes counter that can be switched by clicking it.\nVersion 1.4.7 Added jQuery and other stuff\nVersion 1.4.8 Added Compatibility")
 }
 else
 {
@@ -90,7 +92,7 @@ alert("continue to game?")
         localStorage.setItem('alerted','yes');
     }
 
-    alert("Injected G.E.T Version 1.4.7 (It might take a while for code to load depending on how powerful you computer is)")
+    alert("Injected G.E.T Version 1.4.8 (It might take a while for code to load depending on how powerful you computer is)")
     document.getElementById("gatsLogo").src = "https://i.imgur.com/aOG03yv.png"
 };
 
@@ -101,7 +103,7 @@ var message = document.getElementById("announcementMessage");
 
 window.onload = function () {
     document.getElementById("gameadsbannerpic").innerHTML = "add deleted (beta)";
-    document.title = "G.E.T  V1.4.7";
+    document.title = "G.E.T  V1.4.8";
   var newM = "Going to add auto upgrade soon! stay tuned (Also click this text to see tips and tricks/combos)";
   message.textContent = newM;
 };
@@ -126,7 +128,7 @@ var link = document.getElementById("infoFooter")
 link.addEventListener("click", () => {
 if (window.confirm('Press Ok to see changelog. Press cancel to see stats'))
 {
-alert("Version 1.0.1 Added Title\nVersion 1.0.2 Added other customization stuff\n Version 1.0.3 Disabled canvas to fix glitch\nVersion 1.0.4 Fixed css for top scores and play also credit for myself XD\nVersion 1.0.5 Checks for update\nVersion 1.1.5 Redid gui also other alert/changelog/stats stuff\nVersion 1.1.6 Made the homescreen customization match\n Version 1.2.6 Added Tips and Tricks and Combos for each gun.\nVersion 1.3.6 Added fps,ms,bytes counter that can be changed by clicking on it.\nVersion 1.4.7 Added jQuery and other stuff.")
+alert("Version 1.0.1 Added Title\nVersion 1.0.2 Added other customization stuff\n Version 1.0.3 Disabled canvas to fix glitch\nVersion 1.0.4 Fixed css for top scores and play also credit for myself XD\nVersion 1.0.5 Checks for update\nVersion 1.1.5 Redid gui also other alert/changelog/stats stuff\nVersion 1.1.6 Made the homescreen customization match\n Version 1.2.6 Added Tips and Tricks and Combos for each gun.\nVersion 1.3.6 Added fps,ms,bytes counter that can be changed by clicking on it.\nVersion 1.4.7 Added jQuery and other stuff.\nVersion 1.4.8 Added Compatibility")
 }
 else
 {
