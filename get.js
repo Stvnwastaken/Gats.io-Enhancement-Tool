@@ -290,16 +290,6 @@ javascript:(function(){var script=document.createElement('script');script.onload
 
 
 //gui
-var title = "Constructing HTML Elements";
-
-var html = [
-    '<div class="tutorial">',
-        '<h1 class="tutorial-heading">' + title + '<h1>',
-    '</div>'
-].join("\n");
-// html: '<div ...>\n<h1 ...>Constructing HTML Elements<h1>\n</div>'
-
-$("body").append(html);
 
 //--- useful styles to make interface look cooler + some other styles for general stuff like adblock(which  should "hopefully work" although prob it doesn't so dm me on discord if u can help---\\
 GM_addStyle ( `
