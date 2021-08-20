@@ -7,7 +7,6 @@
 // @icon         https://www.google.com/s2/favicons?domain=gats.io
 // @description  Gats.io-Enhancement-Tool (G.E.T) This is a script for Gats.io that customizes the gui This is still in the Beta stage so don't expect it to be a completely developed, and perfect script.
 // @require      https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js
-// @require      https://cdnjs.cloudflare.com/ajax/libs/mustache.js/4.2.0/mustache.min.js
 // @updateURL    https://greasyfork.org/en/scripts/430140-g-e-t-gats-enhancement-tool-beta-version-1-4-8
 // @downloadURL  https://greasyfork.org/en/scripts/430140-g-e-t-gats-enhancement-tool-beta-version-1-4-8
 // @grant        GM_addStyle
@@ -28,7 +27,7 @@
     V1.2.6 Added Tips and Tricks and Combos for each gun
     V1.3.6 Added fps,ms,bytes counter
     V1.4.7 Added jQuery and added other stuff
-    V1.4.8 Added compatibility and mustache js*/
+    V1.4.8 Added compatibility*/
 
 ///===--- INFORMATION ---===\\\
 
@@ -83,19 +82,6 @@
 //--- checks to see if script is running and gives new logo (if you don't see an alert before the page finishes loading the script is not working)---\\
 function scriptRunning() {
 
-  var alerted = localStorage.getItem('alerted') || '';
-    if (alerted != 'yes') {
-   if (window.confirm('Want to see entire changelog?'))
-{
-alert("Version 1.0.1 Added Title\nVersion 1.0.2 Added other customization stuff\n Version 1.0.3 Disabled canvas to fix glitch\nVersion 1.0.4 Fixed css for top scores and play also credit for myself XD\nVersion 1.0.5 Checks for update\nVersion 1.1.5 Redid gui also other alert/changelog/stats stuff\nVersion 1.1.6 Made the homescreen customization match\nVersion 1.2.6 Added Tips and Tricks and Combos for each gun.\nVersion 1.3.6 Added fps,ms,bytes counter that can be switched by clicking it.\nVersion 1.4.7 Added jQuery and other stuff\nVersion 1.4.8 Added Compatibility and mustache js")
-}
-else
-{
-alert("continue to game?")
-}
-        localStorage.setItem('alerted','yes');
-    }
-
     alert("Injected G.E.T Version 1.4.8 (It might take a while for code to load depending on how powerful you computer is)")
     document.getElementById("gatsLogo").src = "https://i.imgur.com/aOG03yv.png"
 };
@@ -132,7 +118,7 @@ var link = document.getElementById("infoFooter")
 link.addEventListener("click", () => {
 if (window.confirm('Press Ok to see changelog. Press cancel to see stats'))
 {
-alert("Version 1.0.1 Added Title\nVersion 1.0.2 Added other customization stuff\n Version 1.0.3 Disabled canvas to fix glitch\nVersion 1.0.4 Fixed css for top scores and play also credit for myself XD\nVersion 1.0.5 Checks for update\nVersion 1.1.5 Redid gui also other alert/changelog/stats stuff\nVersion 1.1.6 Made the homescreen customization match\n Version 1.2.6 Added Tips and Tricks and Combos for each gun.\nVersion 1.3.6 Added fps,ms,bytes counter that can be changed by clicking on it.\nVersion 1.4.7 Added jQuery and other stuff.\nVersion 1.4.8 Added Compatibility and mustache js")
+alert("Version 1.0.1 Added Title\nVersion 1.0.2 Added other customization stuff\n Version 1.0.3 Disabled canvas to fix glitch\nVersion 1.0.4 Fixed css for top scores and play also credit for myself XD\nVersion 1.0.5 Checks for update\nVersion 1.1.5 Redid gui also other alert/changelog/stats stuff\nVersion 1.1.6 Made the homescreen customization match\n Version 1.2.6 Added Tips and Tricks and Combos for each gun.\nVersion 1.3.6 Added fps,ms,bytes counter that can be changed by clicking on it.\nVersion 1.4.7 Added jQuery and other stuff.\nVersion 1.4.8 Added Compatibility")
 }
 else
 {
@@ -288,9 +274,6 @@ scriptRunning();
 //fps counter
 javascript:(function(){var script=document.createElement('script');script.onload=function(){var stats=new Stats();document.body.appendChild(stats.dom);requestAnimationFrame(function loop(){stats.update();requestAnimationFrame(loop)});};script.src='//mrdoob.github.io/stats.js/build/stats.min.js';document.head.appendChild(script);})()
 
-
-//gui
-
 //--- useful styles to make interface look cooler + some other styles for general stuff like adblock(which  should "hopefully work" although prob it doesn't so dm me on discord if u can help---\\
 GM_addStyle ( `
 
@@ -333,7 +316,7 @@ GM_addStyle ( `
 ` );
 
 //chatbox extension
-document.getElementById("chatbox").setAttribute('maxlength',100);
+document.getElementById("chatbox").maxlength("100");
 document.getElementById("chatbox").style.borderRadius = "25px";
 document.getElementById("chatbox").style.backgroundColor = "blue";
 document.getElementById("chatbox").style.borderColor = "black";
