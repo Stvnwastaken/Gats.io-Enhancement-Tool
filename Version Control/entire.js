@@ -7,8 +7,8 @@
 // @icon         https://www.google.com/s2/favicons?domain=gats.io
 // @description  Gats.io-Enhancement-Tool (G.E.T) This is a script for Gats.io that customizes the gui This is still in the Beta stage so don't expect it to be a completely developed, and perfect script.
 // @require      https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js
-// @updateURL    https://github.com/LightLordYT/Gats.io-Enhancement-Tool/blob/main/get.js
-// @downloadURL  https://github.com/LightLordYT/Gats.io-Enhancement-Tool/blob/main/get.js
+// @updateURL    https://github.com/LightLordYT/Gats.io-Enhancement-Tool/raw/main/get.js
+// @downloadURL  https://github.com/LightLordYT/Gats.io-Enhancement-Tool/raw/main/get.js
 // @grant        GM_addStyle
 // @compatible   chrome+tampermonkey
 // ==/UserScript==
