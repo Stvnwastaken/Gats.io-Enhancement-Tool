@@ -9,8 +9,8 @@
 // @require      https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js
 // @require      https://cdn.jsdelivr.net/gh/LightLordYT/Gats.io-Enhancement-Tool@latest/code.min.js
 // @connect      https://cdn.jsdelivr.net/gh/LightLordYT/Gats.io-Enhancement-Tool@latest/code.min.js
-// @updateURL    https://github.com/LightLordYT/Gats.io-Enhancement-Tool/blob/main/get.js
-// @downloadURL  https://github.com/LightLordYT/Gats.io-Enhancement-Tool/blob/main/get.js
+// @updateURL    https://github.com/LightLordYT/Gats.io-Enhancement-Tool/raw/main/get.js
+// @downloadURL  https://github.com/LightLordYT/Gats.io-Enhancement-Tool/raw/main/get.js
 // @grant        GM_addStyle
 // @grant        GM_xmlhttpRequest
 // @compatible   chrome+tampermonkey
