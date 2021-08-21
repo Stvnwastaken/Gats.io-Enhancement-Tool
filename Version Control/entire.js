@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         G.E.T Gats Enhancement Tool Beta Version 1.5.8
-// @namespace    http://tampermonkey.net/
+// @namespace    https://github.com/LightLordYT/
 // @version      Beta 1.5.8
 // @author       LightLord
 // @match        https://gats.io/
