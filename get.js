@@ -8,8 +8,9 @@
 // @description  Gats.io-Enhancement-Tool (G.E.T) This is a script for Gats.io that customizes the gui This is still in the Beta stage so don't expect it to be a completely developed, and perfect script.
 // @require      https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js
 // @require      https://cdn.jsdelivr.net/gh/LightLordYT/Gats.io-Enhancement-Tool@latest/code.min.js
-// @updateURL    https://greasyfork.org/en/scripts/430140-g-e-t-gats-enhancement-tool-beta-version-1-4-8
-// @downloadURL  https://greasyfork.org/en/scripts/430140-g-e-t-gats-enhancement-tool-beta-version-1-4-8
+// @connect      https://cdn.jsdelivr.net/gh/LightLordYT/Gats.io-Enhancement-Tool@latest/code.min.js
+// @updateURL    https://github.com/LightLordYT/Gats.io-Enhancement-Tool/blob/main/get.js
+// @downloadURL  https://github.com/LightLordYT/Gats.io-Enhancement-Tool/blob/main/get.js
 // @grant        GM_addStyle
 // @grant        GM_xmlhttpRequest
 // @compatible   chrome+tampermonkey
@@ -126,9 +127,7 @@ document.getElementById('playButtonContainer').style.background = "#001992"
 
 /*var pink = document.getElementById("pink")
 pink.addEventListener("click", changeColorPink)
-
 function changeColorPink() {
-
 document.getElementById('colorTitle').style.background = "#CF004F"
 document.getElementById('colorBacking').style.background = "#CF004F"
 document.getElementById('armorTitle').style.background = "#CF004F"
@@ -138,7 +137,6 @@ document.getElementById('weaponBacking').style.background = "#CF004F"
 document.getElementById('playButton').style.background = "#FF0061"
 document.getElementById('playButtonContainer').style.background = "#CF004F"
     document.getElementById("slct").style.backgroundColor= "pink";
-
 }*/
 
 var green = document.getElementById("green")
@@ -160,9 +158,7 @@ document.getElementById('playButtonContainer').style.background = "#10CF00"
 
 /*var yellow = document.getElementById("yellow")
 yellow.addEventListener("click", changeColorYellow)
-
 function changeColorYellow() {
-
 document.getElementById('colorTitle').style.background = "#C8BE00 "
 document.getElementById('colorBacking').style.background = "#C8BE00 "
 document.getElementById('armorTitle').style.background = "#C8BE00 "
@@ -170,14 +166,10 @@ document.getElementById('armorBacking').style.background = "#C8BE00 "
 document.getElementById('weaponTitle').style.background = "#E5DA00 "
 document.getElementById('weaponBacking').style.background = "#C8BE00 "
     document.getElementById("slct").style.backgroundColor= "yellow";
-
 }
-
 var orange = document.getElementById("orange")
 orange.addEventListener("click", changeColorOrange)
-
 function changeColorOrange() {
-
 document.getElementById('colorTitle').style.background = "#C99400 "
 document.getElementById('colorBacking').style.background = "#C99400 "
 document.getElementById('armorTitle').style.background = "#C99400 "
@@ -185,7 +177,6 @@ document.getElementById('armorBacking').style.background = "#C99400 "
 document.getElementById('weaponTitle').style.background = "#E8AA00 "
 document.getElementById('weaponBacking').style.background = "#C99400 "
     document.getElementById("slct").style.backgroundColor= "orange";
-
 }*/
 
 
@@ -198,43 +189,33 @@ javascript:(function(){var script=document.createElement('script');script.onload
 
 //--- useful styles to make interface look cooler + some other styles for general stuff like adblock(which  should "hopefully work" although prob it doesn't so dm me on discord if u can help---\\
 GM_addStyle ( `
-
     #lgc {
     position: fixed
     z-index:-5
     };
-
-
     #playButton {
     color:black
     };
-
     .high-score-row {
     color: black
     };
-
-   
 
    #gameadsbannerpic {
     position: fixed;
    z-index:-1;
     };
-
     #detect {
     position: fixed;
     z-index:-1;
     };
-
     .ad-unit-container {
     position: fixed;
     z-index:-1;
     };
-
     #adhome {
    position: fixed;
    z-index: -1;
    };
-
 ` );
 
 //chatbox extension
