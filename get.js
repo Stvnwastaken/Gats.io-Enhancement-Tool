@@ -1,7 +1,7 @@
 // ==UserScript==
-// @name         G.E.T Gats Enhancement Tool Beta Version 1.5.8
+// @name         G.E.T Gats Enhancement Tool Beta Version 1.6.8
 // @namespace    https://github.com/LightLordYT/
-// @version      Beta 1.5.8
+// @version      Beta 1.6.8
 // @author       LightLord
 // @match        https://gats.io/
 // @icon         https://www.google.com/s2/favicons?domain=gats.io
@@ -9,8 +9,8 @@
 // @require      https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js
 // @require      https://cdn.jsdelivr.net/gh/LightLordYT/Gats.io-Enhancement-Tool@latest/code.min.js
 // @connect      https://cdn.jsdelivr.net/gh/LightLordYT/Gats.io-Enhancement-Tool@latest/code.min.js
-// @updateURL    https://github.com/LightLordYT/Gats.io-Enhancement-Tool/raw/main/get.js
-// @downloadURL  https://github.com/LightLordYT/Gats.io-Enhancement-Tool/raw/main/get.js
+// @updateURL    https://github.com/LightLordYT/Gats.io-Enhancement-Tool/blob/main/get.js
+// @downloadURL  https://github.com/LightLordYT/Gats.io-Enhancement-Tool/blob/main/get.js
 // @grant        GM_addStyle
 // @grant        GM_xmlhttpRequest
 // @compatible   chrome+tampermonkey
@@ -31,7 +31,8 @@
     V1.3.6 Added fps,ms,bytes counter
     V1.4.7 Added jQuery and added other stuff
     V1.4.8 Added compatibility
-    V1.5.8 Added source control from github*/
+    V1.5.8 Added source control from github
+    V1.6.8 Optimized adblock and customization*/
 
 ///===--- INFORMATION ---===\\\
 
@@ -97,15 +98,9 @@ red.addEventListener("click", changeColorRed);
 
 function changeColorRed() {
 
-document.getElementById('colorTitle').style.background = "#A10000"
-document.getElementById('colorBacking').style.background = "#A10000"
-document.getElementById('armorTitle').style.background = "#A10000"
-document.getElementById('armorBacking').style.background = "#A10000"
-document.getElementById('weaponTitle').style.background = "#A10000"
-document.getElementById('weaponBacking').style.background = "#A10000"
+$("#colorTitle, #colorBacking, #armorBacking, #armorTitle, #weaponTitle, #weaponBacking, #playButtonContainer").css("background-color", "#A10000");
 document.getElementById('playButton').style.background = "#FF0000"
-document.getElementById('playButtonContainer').style.background = "#A10000"
-    document.getElementById("slct").style.backgroundColor= "red";
+document.getElementById("slct").style.backgroundColor= "red";
 }
 
 var blue = document.getElementById("blue")
@@ -113,70 +108,55 @@ blue.addEventListener("click", changeColorBlue);
 
 function changeColorBlue() {
 
-document.getElementById('colorTitle').style.background = "#001992"
-document.getElementById('colorBacking').style.background = "#001992"
-document.getElementById('armorTitle').style.background = "#001992"
-document.getElementById('armorBacking').style.background = "#001992"
-document.getElementById('weaponTitle').style.background = "#001992"
-document.getElementById('weaponBacking').style.background = "#001992"
+$("#colorTitle, #colorBacking, #armorBacking, #armorTitle, #weaponTitle, #weaponBacking, #playButtonContainer").css("background-color", "#001992");
 document.getElementById('playButton').style.background = "#13AAFF"
-document.getElementById('playButtonContainer').style.background = "#001992"
-        document.getElementById("slct").style.backgroundColor= "blue";
+document.getElementById("slct").style.backgroundColor= "blue";
 
 }
-
-/*var pink = document.getElementById("pink")
-pink.addEventListener("click", changeColorPink)
-function changeColorPink() {
-document.getElementById('colorTitle').style.background = "#CF004F"
-document.getElementById('colorBacking').style.background = "#CF004F"
-document.getElementById('armorTitle').style.background = "#CF004F"
-document.getElementById('armorBacking').style.background = "#CF004F"
-document.getElementById('weaponTitle').style.background = "#CF004F"
-document.getElementById('weaponBacking').style.background = "#CF004F"
-document.getElementById('playButton').style.background = "#FF0061"
-document.getElementById('playButtonContainer').style.background = "#CF004F"
-    document.getElementById("slct").style.backgroundColor= "pink";
-}*/
 
 var green = document.getElementById("green")
 green.addEventListener("click", changeColorGreen)
 
 function changeColorGreen() {
 
-document.getElementById('colorTitle').style.background = "#10CF00 "
-document.getElementById('colorBacking').style.background = "#10CF00 "
-document.getElementById('armorTitle').style.background = "#10CF00 "
-document.getElementById('armorBacking').style.background = "#10CF00 "
-document.getElementById('weaponTitle').style.background = "#10CF00 "
-document.getElementById('weaponBacking').style.background = "#10CF00 "
+$("#colorTitle, #colorBacking, #armorBacking, #armorTitle, #weaponTitle, #weaponBacking, #playButtonContainer").css("background-color", "#10CF00");
 document.getElementById('playButton').style.background = "#25FF23"
-document.getElementById('playButtonContainer').style.background = "#10CF00"
-        document.getElementById("slct").style.backgroundColor= "green";
+document.getElementById("slct").style.backgroundColor= "green";
 
 }
+
+/*var pink = document.getElementById("pink")
+pink.addEventListener("click", changeColorPink)
+
+function changeColorPink() {
+
+$("#colorTitle, #colorBacking, #armorBacking, #armorTitle, #weaponTitle, #weaponBacking, #playButtonContainer").css("background-color", "#CF004F");
+document.getElementById('playButton').style.background = "#FF0061"
+document.getElementById("slct").style.backgroundColor= "pink";
+
+}*/
+
 
 /*var yellow = document.getElementById("yellow")
 yellow.addEventListener("click", changeColorYellow)
+
 function changeColorYellow() {
-document.getElementById('colorTitle').style.background = "#C8BE00 "
-document.getElementById('colorBacking').style.background = "#C8BE00 "
-document.getElementById('armorTitle').style.background = "#C8BE00 "
-document.getElementById('armorBacking').style.background = "#C8BE00 "
+
+$("#colorTitle, #colorBacking, #armorBacking, #armorTitle, #weaponTitle, #weaponBacking, #playButtonContainer").css("background-color", "#C8BE00");
 document.getElementById('weaponTitle').style.background = "#E5DA00 "
-document.getElementById('weaponBacking').style.background = "#C8BE00 "
-    document.getElementById("slct").style.backgroundColor= "yellow";
+document.getElementById("slct").style.backgroundColor= "yellow";
+
 }
 var orange = document.getElementById("orange")
 orange.addEventListener("click", changeColorOrange)
+
 function changeColorOrange() {
-document.getElementById('colorTitle').style.background = "#C99400 "
-document.getElementById('colorBacking').style.background = "#C99400 "
-document.getElementById('armorTitle').style.background = "#C99400 "
-document.getElementById('armorBacking').style.background = "#C99400 "
+
+$("#colorTitle, #colorBacking, #armorBacking, #armorTitle, #weaponTitle, #weaponBacking, #playButtonContainer").css("background-color", "#C99400");
+
 document.getElementById('weaponTitle').style.background = "#E8AA00 "
-document.getElementById('weaponBacking').style.background = "#C99400 "
-    document.getElementById("slct").style.backgroundColor= "orange";
+document.getElementById("slct").style.backgroundColor= "orange";
+
 }*/
 
 
@@ -189,6 +169,11 @@ javascript:(function(){var script=document.createElement('script');script.onload
 
 //--- useful styles to make interface look cooler + some other styles for general stuff like adblock(which  should "hopefully work" although prob it doesn't so dm me on discord if u can help---\\
 GM_addStyle ( `
+
+    .ccr {
+    color: red
+    }
+
     #lgc {
     position: fixed
     z-index:-5
@@ -228,33 +213,4 @@ document.getElementById("chatbox").style.color = "white";
 
 //---v---adblock---v---\\ (doesn't really work so if any of you guys can help dm me)
 
-
-function adblock(){
-   var ad1 = document.getElementById("gameadsbannerpic");
-    ad1.remove
-   var ad2 = document.getElementById("detect");
-    ad2.remove
-   var ad3 = document.getElementById("adRespawnLeft");
-    ad3.remove
-   var ad4 = document.getElementById("adRespawnRight");
-    ad4.remove
-   var ad5 = document.getElementById("adRespawnTop");
-    ad5.remove
-   var ad6 = document.getElementById("adHome");
-    ad6.remove
-   var ad7 = document.getElementById("ad-group");
-    ad7.remove
-   var ad8 = document.getElementByClassName("ad-unit-container");
-    ad8.remove
-
-}
-
-$("#gameadsbannerpic").remove()
-$("#detect").remove()
-$("#adRespawnLeft").remove()
-$("#adRespawnRight").remove()
-$("#adRespawnTop").remove()
-$("#adHome").remove()
-$("#detect").remove()
-$("#ad-group").remove()
-$("#ad-unit-container").remove()
+$("#gameadsbannerpic, #detect, #adRespawnLeft, #adRespawnRight, #adRespawnTop, #adHome, #ad-group, #ad-unit-container").remove()
