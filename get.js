@@ -120,8 +120,8 @@ green.addEventListener("click", changeColorGreen)
 function changeColorGreen() {
 
 $("#colorTitle, #colorBacking, #armorBacking, #armorTitle, #weaponTitle, #weaponBacking, #playButtonContainer").css("background-color", "#10CF00");
-document.getElementById('playButton').style.background = "#25FF23"
-document.getElementById("slct").style.backgroundColor= "green";
+$('playButton')("background-color", "#25FF23")
+$("slct").css("background-color", "green");
 
 }
 
