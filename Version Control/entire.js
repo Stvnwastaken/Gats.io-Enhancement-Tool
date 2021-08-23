@@ -62,7 +62,6 @@
 //--- credit to mr doob for the fps counter ---\\
 
 //===--- small info ---==\\
-//--- i will add some comments to point out what the code does ---\\
 //--- IMPORTANT FOR CUSTOMIZATION --> look below for the code function changeColor(and whatever color you want to have) for exmaple function changeColorBlue. If it has  // in front of it and you want the color then remove it.
 //--- the reason that i have only made 3 available is that for some reason if i make more than that then it kinda malfunctions the script so.. just don't make it more than three colors
 //--- i have made it red green and blue for now but you can change it to whatever color you want as long as its within 3 colors in total also make so to do FILE--> SAVE
