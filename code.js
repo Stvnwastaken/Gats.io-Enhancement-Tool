@@ -1,7 +1,7 @@
 //--- checks to see if script is running and gives new logo (if you don't see an alert before the page finishes loading the script is not working)---\\
 function scriptRunning() {
 
-    alert("Injected G.E.T Version 1.5.8 (It might take a while for code to load depending on how powerful you computer is)")
+    alert("Injected G.E.T Version 1.6.8 (It might take a while for code to load depending on how powerful you computer is)")
     document.getElementById("gatsLogo").src = "https://i.imgur.com/aOG03yv.png"
 };
 
@@ -12,7 +12,7 @@ var message = document.getElementById("announcementMessage");
 
 window.onload = function () {
     document.getElementById("gameadsbannerpic").innerHTML = "add deleted (beta)";
-    document.title = "G.E.T  V1.5.8";
+    document.title = "G.E.T  V1.6.8";
   var newM = "Going to add auto upgrade soon! stay tuned (Also click this text to see tips and tricks/combos)";
   message.textContent = newM;
 };
@@ -37,7 +37,7 @@ var link = document.getElementById("infoFooter")
 link.addEventListener("click", () => {
 if (window.confirm('Press Ok to see changelog. Press cancel to see stats'))
 {
-alert("Version 1.0.1 Added Title\nVersion 1.0.2 Added other customization stuff\n Version 1.0.3 Disabled canvas to fix glitch\nVersion 1.0.4 Fixed css for top scores and play also credit for myself XD\nVersion 1.0.5 Checks for update\nVersion 1.1.5 Redid gui also other alert/changelog/stats stuff\nVersion 1.1.6 Made the homescreen customization match\n Version 1.2.6 Added Tips and Tricks and Combos for each gun.\nVersion 1.3.6 Added fps,ms,bytes counter that can be changed by clicking on it.\nVersion 1.4.7 Added jQuery and other stuff.\nVersion 1.4.8 Added Compatibility\nVersion 1.5.8 Added github source control")
+alert("Version 1.0.1 Added Title\nVersion 1.0.2 Added other customization stuff\n Version 1.0.3 Disabled canvas to fix glitch\nVersion 1.0.4 Fixed css for top scores and play also credit for myself XD\nVersion 1.0.5 Checks for update\nVersion 1.1.5 Redid gui also other alert/changelog/stats stuff\nVersion 1.1.6 Made the homescreen customization match\n Version 1.2.6 Added Tips and Tricks and Combos for each gun.\nVersion 1.3.6 Added fps,ms,bytes counter that can be changed by clicking on it.\nVersion 1.4.7 Added jQuery and other stuff.\nVersion 1.4.8 Added Compatibility\nVersion 1.5.8 Added github source control\nVersion 1.6.8 Optimized adblock and customization")
 }
 else
 {
