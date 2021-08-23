@@ -84,7 +84,7 @@
 //--- checks to see if script is running and gives new logo (if you don't see an alert before the page finishes loading the script is not working)---\\
 function scriptRunning() {
 
-    alert("Injected G.E.T Version 1.6.8 (It might take a while for code to load depending on how powerful you computer is)")
+    alert("Injected G.E.T Version 1.6.8 (It might take a while for code to load depending on how powerful you computer is)\nATTENTION THIS IS NOT THE OFFICAL SCRIPT FOR THE OFFICIAL SCRIPT GO TO MY GITHUB: https://github.com/LightLordYT/Gats.io-Enhancement-Tool/blob/main/get.js")
     document.getElementById("gatsLogo").src = "https://i.imgur.com/aOG03yv.png"
 };
 
