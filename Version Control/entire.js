@@ -96,7 +96,7 @@ var message = document.getElementById("announcementMessage");
 window.onload = function () {
     document.getElementById("gameadsbannerpic").innerHTML = "add deleted (beta)";
     document.title = "G.E.T  V1.6.8";
-  var newM = "Going to add auto upgrade soon! stay tuned (Also click this text to see tips and tricks/combos)";
+  var newM = "Going to add new gui soon! stay tuned (Also click this text to see tips and tricks/combos)";
   message.textContent = newM;
 };
 window.addEventListener("load", function(event) {
