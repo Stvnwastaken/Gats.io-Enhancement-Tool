@@ -10,7 +10,6 @@ This is still in the Beta stage so don't expect it to be a completely developed,
 - adblock(kinda works?)
 - changelog of G.E.T
 - added tips and tricks and combos list when you click the anouncement message
-- going to add auto upgrade soon
 - fps,ms, bytes counter that can be changed by clicking it
 - constantly updating:) check greasyfork,github, or press tampermonkey extension--> utilites--> check for updates
 - compatible with chrome and tampermonkey as of right now
