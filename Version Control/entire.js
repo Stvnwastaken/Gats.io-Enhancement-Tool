@@ -198,43 +198,33 @@ green.addEventListener("click", changeColorGreen)
 function changeColorGreen() {
 
 $("#colorTitle, #colorBacking, #armorBacking, #armorTitle, #weaponTitle, #weaponBacking, #playButtonContainer").css("background-color", "#10CF00");
-document.getElementById('playButton').style.background = "#25FF23"
-document.getElementById("slct").style.backgroundColor= "green";
+$('playButton')("background-color", "#25FF23")
+$("slct").css("background-color", "green");
 
 }
 
 /*var pink = document.getElementById("pink")
 pink.addEventListener("click", changeColorPink)
-
 function changeColorPink() {
-
 $("#colorTitle, #colorBacking, #armorBacking, #armorTitle, #weaponTitle, #weaponBacking, #playButtonContainer").css("background-color", "#CF004F");
 document.getElementById('playButton').style.background = "#FF0061"
 document.getElementById("slct").style.backgroundColor= "pink";
-
 }*/
 
 
 /*var yellow = document.getElementById("yellow")
 yellow.addEventListener("click", changeColorYellow)
-
 function changeColorYellow() {
-
 $("#colorTitle, #colorBacking, #armorBacking, #armorTitle, #weaponTitle, #weaponBacking, #playButtonContainer").css("background-color", "#C8BE00");
 document.getElementById('weaponTitle').style.background = "#E5DA00 "
 document.getElementById("slct").style.backgroundColor= "yellow";
-
 }
 var orange = document.getElementById("orange")
 orange.addEventListener("click", changeColorOrange)
-
 function changeColorOrange() {
-
 $("#colorTitle, #colorBacking, #armorBacking, #armorTitle, #weaponTitle, #weaponBacking, #playButtonContainer").css("background-color", "#C99400");
-
 document.getElementById('weaponTitle').style.background = "#E8AA00 "
 document.getElementById("slct").style.backgroundColor= "orange";
-
 }*/
 
 
@@ -247,11 +237,9 @@ javascript:(function(){var script=document.createElement('script');script.onload
 
 //--- useful styles to make interface look cooler + some other styles for general stuff like adblock(which  should "hopefully work" although prob it doesn't so dm me on discord if u can help---\\
 GM_addStyle ( `
-
     .ccr {
     color: red
     }
-
     #lgc {
     position: fixed
     z-index:-5
@@ -262,7 +250,6 @@ GM_addStyle ( `
     .high-score-row {
     color: black
     };
-
    #gameadsbannerpic {
     position: fixed;
    z-index:-1;
