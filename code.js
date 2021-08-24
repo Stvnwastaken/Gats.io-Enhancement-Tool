@@ -19,7 +19,7 @@ window.onload = function () {
 window.addEventListener("load", function(event) {
 document.getElementById('highScoresHeading').style.background = "#13AAFF"
 document.getElementById('moreGamesFooter').style.background = "#13AAFF"
-document.getElementById('moreGamesFooter').innerHTML = "G.E.T made by LightLord"
+document.getElementById('moreGamesFooter').innerHTML = "My github and greasyfork"
 var options = document.getElementById("moreGamesFooter")
 options.addEventListener("click", () => {
 if (window.confirm('Press Ok to see my G.E.T github repository. Press cancel to see my greasyfork'))
