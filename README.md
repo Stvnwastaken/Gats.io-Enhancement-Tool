@@ -20,11 +20,12 @@ This is still in the Beta stage so don't expect it to be a completely developed,
 some scripts unfortunately contain code that can take your personal information or data. Watch out for that.
 I made this script since I thought the game started to become boring.
 It was to kinda help self learn a bit more about js. DON'T COME COMPLAINING THERE IS A VIRUS IT IS OPENSOURCE.
-This script does not contain any sort of virus or anything the code is available in get.js(https://github.com/LightLordYT/Gats.io-Enhancement-Tool/blob/main/get.js) anyway. Also the adblock isn't one hundred percent perfect...
+This script does not contain any sort of virus or anything the code is available in entire.js(https://github.com/LightLordYT/Gats.io-Enhancement-Tool/blob/main/entire.js) anyway. Also the adblock isn't one hundred percent perfect...
 
 # Installation
 I don't think it even works if you paste this code into the console(inspect element) and it is unnecessary anyway since tampermonkey is a code executor extension.
 So basically copy paste code into new tampermonkey script(delete current code in the new script first) and press file save.
+GO TO https://github.com/LightLordYT/Gats.io-Enhancement-Tool/blob/main/get.js COPY THE CODE AND PASTE INTO NEW TAMPERMONKEY SCRIPT MAKE SURE THE CODE IN NEW SCRIPT IS FIRST DELETED BEFORE PASTING NEW SCRIPT
 MAKE SURE TO GO TO THE TAMPERMONKEY DASHBOARD AND TURN THE SCRIPT ON. THEN REFRESH GATS.IO
 
 
@@ -62,5 +63,6 @@ if you can help with the probelm stated above contact me:)
 this does not require dev tools you can simply just go to the page and press ctrl+u or right click and press page source. There you can see the html and get some important and useful ids which you can change etc
 also if you click on the .js and .css files you can see the css and js code. If you want to change the look go to css if you want to change like interaction such as "I think" aimbot and etc
 call upon the ids/classes using document.getElementbyId or document.getElementByClassName. I recommend looking at khan academy for more info about it
+
 # My Youtube channel (optional)
 if you interested in learning more about graphic design, coding, and some game content my channel is available: http://www.youtube.com/channel/UCGFfoQy07ho5wF_5duaz1vQ
