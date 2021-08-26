@@ -3,16 +3,16 @@ This is a script for Gats.io that enhances user experience by customizing the in
 This is still in the Beta stage so don't expect it to be a completely developed, and perfect script.
 
 # Features
-- customization of home screen
-- gui updated
-- css updated
-- extension of the chatbox changed the limit and other stuff
-- adblock(kinda works?)
-- changelog of G.E.T
-- added tips and tricks and combos list when you click the anouncement message
-- fps,ms, bytes counter that can be changed by clicking it
-- constantly updating:) check greasyfork,github, or press tampermonkey extension--> utilites--> check for updates
-- compatible with chrome and tampermonkey as of right now
+ [x] customization of home screen
+ [x] gui updated
+ [x] css updated
+ [x] extension of the chatbox changed the limit and other stuff
+ [] adblock(kinda works?)
+ [x] changelog of G.E.T
+ [x] added tips and tricks and combos list when you click the anouncement message
+ [x] fps,ms, bytes counter that can be changed by clicking it
+ [x] constantly updating:) check greasyfork,github, or press tampermonkey extension--> utilites--> check for updates
+ [x] compatible with chrome and tampermonkey as of right now
 
 
 
