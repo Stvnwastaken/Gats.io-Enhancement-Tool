@@ -27,6 +27,8 @@ This is still in the Beta stage so don't expect it to be a completely developed,
 
 [Updates](https://github.com/LightLordYT/Gats.io-Enhancement-Tool/blob/main/README.md#updates)
 
+[Important for customization]((https://github.com/LightLordYT/Gats.io-Enhancement-Tool/blob/main/README.md#https://github.com/LightLordYT/Gats.io-Enhancement-Tool#important-for-customization----look-for-the-code-function-changecolorand-whatever-color-you-want-to-have-for-exmaple-function-changecolorblue-if-it-has---in-front-of-it-and-you-want-the-color-then-remove-it)
+
 [My Youtube Channel](https://github.com/LightLordYT/Gats.io-Enhancement-Tool/blob/main/README.md#my-youtube-channel-optional)
 
 [License](https://github.com/LightLordYT/Gats.io-Enhancement-Tool/blob/main/README.md#license)
@@ -42,11 +44,6 @@ I don't think it even works if you paste this code into the console(inspect elem
 So basically copy paste code into new tampermonkey script(delete current code in the new script first) and press file save.
 GO TO https://github.com/LightLordYT/Gats.io-Enhancement-Tool/blob/main/get.js COPY THE CODE AND PASTE INTO NEW TAMPERMONKEY SCRIPT MAKE SURE THE CODE IN NEW SCRIPT IS FIRST DELETED BEFORE PASTING NEW SCRIPT
 MAKE SURE TO GO TO THE TAMPERMONKEY DASHBOARD AND TURN THE SCRIPT ON. THEN REFRESH GATS.IO
-
-
-# Problems and Bugs 
-Any problem with this script like a bug in it or a glitch contact me so I can fix it :)
-
 
 # Contact Information
 If you want to ask any questions or collab on a coding project you can reach me through github,discord, or greasyfork. Please don't contact me with unnecessary stuff
