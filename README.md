@@ -14,7 +14,22 @@ This is still in the Beta stage so don't expect it to be a completely developed,
 - [x] constantly updating:) check greasyfork,github, or press tampermonkey extension--> utilites--> check for updates
 - [x] compatible with chrome and tampermonkey as of right now
 
+# Index
+[Features](https://github.com/LightLordYT/Gats.io-Enhancement-Tool/blob/main/README.md#features)
 
+[Important Awareness](https://github.com/LightLordYT/Gats.io-Enhancement-Tool/blob/main/README.md#important-awareness)
+
+[Installation](https://github.com/LightLordYT/Gats.io-Enhancement-Tool/blob/main/README.md#installation)
+
+[Contact Information](https://github.com/LightLordYT/Gats.io-Enhancement-Tool/blob/main/README.md#contact-information)
+
+[Contribution](https://github.com/LightLordYT/Gats.io-Enhancement-Tool/blob/main/README.md#contribution)
+
+[Updates](https://github.com/LightLordYT/Gats.io-Enhancement-Tool/blob/main/README.md#updates)
+
+[My Youtube Channel](https://github.com/LightLordYT/Gats.io-Enhancement-Tool/blob/main/README.md#my-youtube-channel-optional)
+
+[License](https://github.com/LightLordYT/Gats.io-Enhancement-Tool/blob/main/README.md#license)
 
 # IMPORTANT AWARENESS
 some scripts unfortunately contain code that can take your personal information or data. Watch out for that.
@@ -66,3 +81,27 @@ call upon the ids/classes using document.getElementbyId or document.getElementBy
 
 # My Youtube channel (optional)
 if you interested in learning more about graphic design, coding, and some game content my channel is available: http://www.youtube.com/channel/UCGFfoQy07ho5wF_5duaz1vQ
+
+# License
+MIT License
+
+Copyright (c) 2021 LightLord
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
