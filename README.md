@@ -27,7 +27,7 @@ This is still in the Beta stage so don't expect it to be a completely developed,
 
 [Updates](https://github.com/LightLordYT/Gats.io-Enhancement-Tool/blob/main/README.md#updates)
 
-[Important for customization]((https://github.com/LightLordYT/Gats.io-Enhancement-Tool/blob/main/README.md#https://github.com/LightLordYT/Gats.io-Enhancement-Tool#important-for-customization----look-for-the-code-function-changecolorand-whatever-color-you-want-to-have-for-exmaple-function-changecolorblue-if-it-has---in-front-of-it-and-you-want-the-color-then-remove-it)
+[Important for customization](https://github.com/LightLordYT/Gats.io-Enhancement-Tool/blob/main/README.md#https://github.com/LightLordYT/Gats.io-Enhancement-Tool#important-for-customization----look-for-the-code-function-changecolorand-whatever-color-you-want-to-have-for-exmaple-function-changecolorblue-if-it-has---in-front-of-it-and-you-want-the-color-then-remove-it)
 
 [My Youtube Channel](https://github.com/LightLordYT/Gats.io-Enhancement-Tool/blob/main/README.md#my-youtube-channel-optional)
 
