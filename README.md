@@ -27,7 +27,7 @@ This is still in the Beta stage so don't expect it to be a completely developed,
 
 [Updates](https://github.com/LightLordYT/Gats.io-Enhancement-Tool/blob/main/README.md#updates)
 
-[Important for customization](https://github.com/LightLordYT/Gats.io-Enhancement-Tool/blob/main/README.md#https://github.com/LightLordYT/Gats.io-Enhancement-Tool#important-for-customization----look-for-the-code-function-changecolorand-whatever-color-you-want-to-have-for-exmaple-function-changecolorblue-if-it-has---in-front-of-it-and-you-want-the-color-then-remove-it)
+[Important for customization](https://github.com/LightLordYT/Gats.io-Enhancement-Tool/blob/main/README.md#important-for-customization)
 
 [My Youtube Channel](https://github.com/LightLordYT/Gats.io-Enhancement-Tool/blob/main/README.md#my-youtube-channel-optional)
 
@@ -65,8 +65,8 @@ Small updates are like fixing bugs and glitches here and there basically you won
 # Credits
 I did use a bit of Vaakir's script for the new interface, block customization and as reference so big shoutout to him!
 
-# IMPORTANT FOR CUSTOMIZATION --> look for the code function changeColor(and whatever color you want to have) for exmaple function changeColorBlue. If it has  // in front of it and you want the color then remove it.
-the reason that i have only made 3 available is that for some reason if i make more than that then it kinda malfunctions the script so.. just don't make it more than three colors
+# IMPORTANT FOR CUSTOMIZATION 
+Look for the code function changeColor(and whatever color you want to have) for exmaple function changeColorBlue. If it has  // in front of it and you want the color then remove it. the reason that i have only made 3 available is that for some reason if i make more than that then it kinda malfunctions the script so.. just don't make it more than three colors
 i have made it red green and blue for now but you can change it to whatever color you want as long as its within 3 colors in total also make so to do FILE--> SAVE
 f you don't like the colors DON"T change the color name but just change the color value like for example #E8AA00 is color value go to here and pick a color: https://htmlcolorcodes.com/color-picker/
 if you can help with the probelm stated above contact me:)
