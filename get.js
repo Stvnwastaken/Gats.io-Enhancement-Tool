@@ -14,6 +14,7 @@
 // @grant        GM_addStyle
 // @grant        GM_xmlhttpRequest
 // @compatible   chrome+tampermonkey
+// @license      MIT License 
 // ==/UserScript==
 /* globals jQuery, $, waitForKeyElements */
 
