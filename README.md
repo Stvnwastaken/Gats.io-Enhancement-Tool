@@ -7,7 +7,7 @@ This is still in the Beta stage so don't expect it to be a completely developed,
 - [x] gui updated
 - [x] css updated
 - [x] extension of the chatbox changed the limit and other stuff
-- [] adblock(kinda works?)
+- [ ] adblock(kinda works?)
 - [x] changelog of G.E.T
 - [x] added tips and tricks and combos list when you click the anouncement message
 - [x] fps,ms, bytes counter that can be changed by clicking it
