@@ -31,54 +31,6 @@
     V1.5.8 Added source control from github
     V1.6.8 Optimized adblock and customization*/
 
-///===--- INFORMATION ---===\\\
-
-
-//===--- IMPORTANT AWARENESS ---===\\
-//--- some scripts unfortunately contain code that can take your personal information or data. Watch out for that.---\\
-//--- I am not an expert coder and took me a few months to fully develop this script for release. I am not that familiar with code taking personal information.---\\
-//--- I heard that anything with document.cookie in the script might be potentially there to take info or something just as bad, I am not exactly sure about this though. ---\\
-//--- Please do not abuse this script in gats.io or it will ruin the game for others. I made this script since I thought the game started to become boring. ---\\
-//--- This script does not contain any sort of virus or anything the code is down below anyway.---\\
-//--- Also the adblock isn't one hundred percent perfect...---\\
-//--- I am fully aware I can optimize this code by a lot using jQuery but im lazy---\\
-
-//===--- Installation ---===\\
-//--- for greasyfork simply press install then when it leads you to the tampermonkey page press install. Then press FILE--> SAVE ---\\
-//--- for github just copy all the code then create a new tampermonkey script and paste the code in. Then press FILE--> SAVE ---\\
-//--- I don't think it even works if you paste this code into the console(inspect element) and it is unnecessary anyway since tampermonkey is a code executor extension. ---\\
-//--- So basically copy paste code into new tampermonkey script(delete current code in the new script first) and press file save.
-
-
-//===--- Contact Information ---===\\
-//--- If you want to ask any questions or collab on a coding project you can reach me through github,discord, or greasyfork. Please don't contact me with unnecessary stuff---\\
-//--- Discord: LightLord#4261
-//--- Github: https://github.com/LightLordYT
-//--- GreasyFork: https://greasyfork.org/en/users/798398-lightlord
-
-
-//===--- Credits ---==\\
-//--- I did use a lot of Vaakir's script for the customization and as reference so big shoutout to him! his youtube channel is here: https://www.youtube.com/channel/UC2m-9cAoT8EEO2dqWlk4Yfw---\\
-//--- credit to mr doob for the fps counter ---\\
-
-//===--- small info ---==\\
-//--- IMPORTANT FOR CUSTOMIZATION --> look below for the code function changeColor(and whatever color you want to have) for exmaple function changeColorBlue. If it has  // in front of it and you want the color then remove it.
-//--- the reason that i have only made 3 available is that for some reason if i make more than that then it kinda malfunctions the script so.. just don't make it more than three colors
-//--- i have made it red green and blue for now but you can change it to whatever color you want as long as its within 3 colors in total also make so to do FILE--> SAVE
-//--- if you don't like the colors DON"T change the color name but just change the color value like for example #E8AA00 is color value go to here and pick a color: https://htmlcolorcodes.com/color-picker/
-//--- if you can help with the probelm stated above contact me:)---\\
-
-//===--- My Youtube channel (optional) ---==\\
-//--- if you interested in learning more about graphic design, coding, and some game content my channel is available : http://www.youtube.com/channel/UCGFfoQy07ho5wF_5duaz1vQ
-
-//=- Note To Self -=\\
-// "https://i.imgur.com/aOG03yv.png"; (src of the new logo) \\
-//"https://i.imgur.com/Wer58qF.png"; (src of new background) \\
-
-
-//FINALLY, ENJOY THE SCRIPT!!!\\
-
-
 
 //--- checks to see if script is running and gives new logo (if you don't see an alert before the page finishes loading the script is not working)---\\
 function scriptRunning() {
