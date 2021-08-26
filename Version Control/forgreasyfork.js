@@ -10,6 +10,7 @@
 // @downloadURL  https://github.com/LightLordYT/Gats.io-Enhancement-Tool/raw/main/get.js
 // @grant        GM_addStyle
 // @compatible   chrome+tampermonkey
+// @license      MIT License 
 // ==/UserScript==
 
 
