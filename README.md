@@ -3,7 +3,7 @@ This is a script for Gats.io that enhances user experience by customizing the in
 This is still in the Beta stage so don't expect it to be a completely developed, and perfect script.
 
 # Features
-  [x][customization of home screen
+  [x]customization of home screen
  [x] gui updated
  [x] css updated
  [x] extension of the chatbox changed the limit and other stuff
