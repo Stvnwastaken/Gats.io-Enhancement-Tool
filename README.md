@@ -4,7 +4,8 @@ This is still in the Beta stage so don't expect it to be a completely developed,
 
 # Features
 - [x] customization of home screen
-- [x] gui updated
+- [ ] gui updated
+- [x] ui updated
 - [x] css updated
 - [x] extension of the chatbox changed the limit and other stuff
 - [ ] adblock(kinda works?)
@@ -13,6 +14,7 @@ This is still in the Beta stage so don't expect it to be a completely developed,
 - [x] fps,ms, bytes counter that can be changed by clicking it
 - [x] constantly updating:) check greasyfork,github, or press tampermonkey extension--> utilites--> check for updates
 - [x] compatible with chrome and tampermonkey as of right now
+- [ ] dark and light theme option
 
 # Index
 [Features](https://github.com/LightLordYT/Gats.io-Enhancement-Tool/blob/main/README.md#features)
