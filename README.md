@@ -42,10 +42,13 @@ It was to kinda help self learn a bit more about js. DON'T COME COMPLAINING THER
 This script does not contain any sort of virus or anything the code is available in entire.js(https://github.com/LightLordYT/Gats.io-Enhancement-Tool/blob/main/entire.js) anyway. Also the adblock isn't one hundred percent perfect...
 
 # Installation
-I don't think it even works if you paste this code into the console(inspect element) and it is unnecessary anyway since tampermonkey is a code executor extension.
-So basically copy paste code into new tampermonkey script(delete current code in the new script first) and press file save.
-GO TO https://github.com/LightLordYT/Gats.io-Enhancement-Tool/blob/main/get.js COPY THE CODE AND PASTE INTO NEW TAMPERMONKEY SCRIPT MAKE SURE THE CODE IN NEW SCRIPT IS FIRST DELETED BEFORE PASTING NEW SCRIPT
-MAKE SURE TO GO TO THE TAMPERMONKEY DASHBOARD AND TURN THE SCRIPT ON. THEN REFRESH GATS.IO
+1. Download [tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=en) for chrome
+2. Go to the tampermonkey dashboard and click Create a New Script
+3. Copy the contents of the script from get.js
+4. Delete all of the default script contents from tampermonkey
+5. Paste the script into tampermonkey
+6. Press Ctrl + s to save
+7. Refresh gats.io and enjoy
 
 # Contact Information
 If you want to ask any questions or collab on a coding project you can reach me through github,discord, or greasyfork. Please don't contact me with unnecessary stuff
