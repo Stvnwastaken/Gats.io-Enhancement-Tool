@@ -67,9 +67,6 @@ If the big number is changed that means that it is a really big update like new 
 Medium updates are like adding one feature and fixing or improving a feature or something. The last zero the one farthest for the one is small updates.
 Small updates are like fixing bugs and glitches here and there basically you won't notice a big difference if you use for example 1.0.1 and 1.0.0
 
-# Credits
-I did use a bit of Vaakir's script for the new interface, block customization and as reference so big shoutout to him!
-
 # IMPORTANT FOR CUSTOMIZATION 
 Look for the code function changeColor(and whatever color you want to have) for exmaple function changeColorBlue. If it has  // in front of it and you want the color then remove it. the reason that i have only made 3 available is that for some reason if i make more than that then it kinda malfunctions the script so.. just don't make it more than three colors
 i have made it red green and blue for now but you can change it to whatever color you want as long as its within 3 colors in total also make so to do FILE--> SAVE
