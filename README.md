@@ -12,9 +12,15 @@ This is still in the Beta stage so don't expect it to be a completely developed,
 - [x] changelog of G.E.T
 - [x] added tips and tricks and combos list when you click the anouncement message
 - [x] fps,ms, bytes counter that can be changed by clicking it
-- [x] constantly updating:) check greasyfork,github, or press tampermonkey extension--> utilites--> check for updates
+- [] constantly updating:) check greasyfork,github, or press tampermonkey extension--> utilites--> check for updates
 - [x] compatible with chrome and tampermonkey as of right now
 - [ ] dark and light theme option
+- [ ] aimbot
+- [ ] zoom
+- [ ] bino
+- [ ] thermal
+- [ ] multibox
+- [ ] bots
 
 # Index
 [Features](https://github.com/LightLordYT/Gats.io-Enhancement-Tool/blob/main/README.md#features)
